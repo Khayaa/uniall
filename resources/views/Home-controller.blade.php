@@ -507,7 +507,7 @@
                                             <div
                                                 class="aiz-card-box border border-light rounded hov-shadow-md mt-1 mb-2 has-transition bg-white">
                                                 <div class="position-relative">
-                                                    <a href="#"
+                                                    <a href="{{ route('product.details' ,['slug' => $product->slug]) }}"
                                                         class="d-block" tabindex="0">
                                                         <img class="img-fit mx-auto h-140px h-md-210px lazyloaded"
                                                             src="{{ $product->image_path }}"
@@ -545,10 +545,10 @@
                                                             class="las la-star active"></i>
                                                     </div>
                                                     <h3 class="fw-600 fs-13 text-truncate-2 lh-1-4 mb-0 h-35px">
-                                                        <a href="https://demo.activeitzone.com/ecommerce/product/apple-iphone-14-pro-128gb-512gb-deep-purple-unlocked"
+                                                        <a href="{{ route('product.details' ,['slug' => $product->slug]) }}"
                                                             class="d-block text-reset" tabindex="0">{{ $product->name }}</a>
                                                     </h3>
-                                                    
+
                                                 </div>
                                             </div>
                                         </div>
