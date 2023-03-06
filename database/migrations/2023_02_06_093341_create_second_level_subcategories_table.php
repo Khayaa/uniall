@@ -11,9 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('customers', function (Blueprint $table) {
+        Schema::create('second_level_subcategories', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->foreignId('parent_id')->constrained('sub_categories');
             $table->timestamps();
+
         });
     }
 
@@ -22,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('customers');
+        Schema::dropIfExists('second_level_subcategories');
     }
 };

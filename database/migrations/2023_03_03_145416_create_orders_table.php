@@ -13,8 +13,9 @@ return new class extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->enum('status',['Awaiting Payment' , 'Payment Received' , 'Payment Updated' , 'Completed' , 'Cancelled']);
+            $table->string('user_email');
+            $table->string('user_phone_number');
+            $table->enum('status',['Awaiting Payment' , 'Payment Received' , 'Payment Updated' , 'Completed' , 'Cancelled', 'Pending']);
             $table->foreignId('user_id')->constrained();
             $table->double('total_price');
             $table->timestamps();

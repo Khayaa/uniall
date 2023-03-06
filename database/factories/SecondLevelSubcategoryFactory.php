@@ -2,12 +2,13 @@
 
 namespace Database\Factories;
 
+use App\Models\SubCategory;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Category>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\SecondLevelSubCategory>
  */
-class CategoryFactory extends Factory
+class SecondLevelSubcategoryFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -18,8 +19,8 @@ class CategoryFactory extends Factory
     {
         return [
             'name' => $this->faker->word,
-            'slug'=> str_replace(' ','-', $this->faker->text(200)),
-            'description' => $this->faker->sentence,
+            'parent_id' => SubCategory::factory()->create()->id ,
+
         ];
     }
 }
