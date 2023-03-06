@@ -62,11 +62,11 @@
                             </div>
 
                             <div class="px-4 py-3 py-lg-4">
-                                @if (session('status'))
+                                {{-- @if (session('status'))
                                     <div class="alert alert-success" role="alert">
                                         {{ session('status') }}
                                     </div>
-                                @endif
+                                @endif --}}
                                 <x-validation-errors class="mb-4" />
                                 <div class="">
                                     <form class="form-default" role="form" method="POST" action="{{ route('login') }}">
