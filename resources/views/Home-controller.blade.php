@@ -584,7 +584,7 @@
                                 class="aiz-card-box border border-light rounded hov-shadow-md mt-1 mb-2 has-transition bg-white">
                                 <span class="badge-custom">OFF<span class="box ml-1 mr-0">&nbsp;20%</span></span>
                                 <div class="position-relative">
-                                    <a href="{{ $product->slug }}" class="d-block">
+                                    <a href="{{ route('product.details' , ['slug' => $product->slug]) }}" class="d-block">
                                         <img class="img-fit lazyload mx-auto h-140px h-md-210px"
                                             src="{{ $product->image_path }}" data-src="{{ $product->image_path }}"
                                             alt="{{ $product->name }}">
