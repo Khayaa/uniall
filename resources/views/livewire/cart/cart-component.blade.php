@@ -105,7 +105,7 @@
                                 </a>
                             </div>
                             <div class="col-md-6 text-center text-md-right">
-                                <button class="btn btn-primary fw-600" onclick="showCheckoutModal()">Continue to Checkout</button>
+                                <a role="button" href="{{ route('checkout') }}" class="btn btn-primary fw-600" >Continue to Checkout</a role="button" href="{{ route('checkout') }}">
                             </div>
                         </div>
                     </div>
