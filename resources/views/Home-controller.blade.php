@@ -1,448 +1,497 @@
 @extends('layouts.base')
 @section('content')
-    {{-- <div class="home-banner-area mb-4 pt-3">
-    <div class="container">
-        <div class="row gutters-10 position-relative">
-            <div class="col-lg-3 position-static d-none d-lg-block">
-                <div class="aiz-category-menu bg-white rounded  shadow-sm">
-                    <div
-                        class="p-3 bg-soft-primary d-none d-lg-block rounded-top all-category position-relative text-left">
-                        <span class="fw-600 fs-16 mr-3">Categories</span>
-                        <a href="https://demo.activeitzone.com/ecommerce/categories" class="text-reset">
-                            <span class="d-none d-lg-inline-block">See All ></span>
-                        </a>
+    <div class="home-banner-area mb-4 pt-3">
+        <div class="container">
+            <div class="row gutters-10 position-relative">
+                <div class="col-lg-3 position-static d-none d-lg-block">
+                    <div class="aiz-category-menu bg-white rounded  shadow-sm">
+                        <div
+                            class="p-3 bg-soft-primary d-none d-lg-block rounded-top all-category position-relative text-left">
+                            <span class="fw-600 fs-16 mr-3">Categories</span>
+                            <a href="https://demo.activeitzone.com/ecommerce/categories" class="text-reset">
+                                <span class="d-none d-lg-inline-block">See All &gt;</span>
+                            </a>
+                        </div>
+                        <ul class="list-unstyled categories no-scrollbar py-2 mb-0 text-left">
+                            <li class="category-nav-element" data-id="1">
+                                <a href="https://demo.activeitzone.com/ecommerce/category/women-clothing-fashion"
+                                    class="text-truncate text-reset py-2 px-3 d-block">
+                                    <img class="cat-image lazyload mr-2 opacity-60"
+                                        src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
+                                        data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/46v0RI8PXlQa4Yy0IftaGaK9rZUQdLOAFkpnjRXT.jpg"
+                                        width="16" alt="Women Clothing &amp; Fashion"
+                                        onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
+                                    <span class="cat-name">Women Clothing &amp; Fashion</span>
+                                </a>
+                                <div class="sub-cat-menu c-scrollbar-light rounded shadow-lg p-4">
+                                    <div class="c-preloader text-center absolute-center">
+                                        <i class="las la-spinner la-spin la-3x opacity-70"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="category-nav-element" data-id="2">
+                                <a href="https://demo.activeitzone.com/ecommerce/category/men-clothing-fashion"
+                                    class="text-truncate text-reset py-2 px-3 d-block">
+                                    <img class="cat-image lazyload mr-2 opacity-60"
+                                        src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
+                                        data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/LHUk7AM6okO07NvMOkVB35JbQBCLGLjfbRBuUNHc.jpg"
+                                        width="16" alt="Men Clothing &amp; Fashion"
+                                        onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
+                                    <span class="cat-name">Men Clothing &amp; Fashion</span>
+                                </a>
+                                <div class="sub-cat-menu c-scrollbar-light rounded shadow-lg p-4">
+                                    <div class="c-preloader text-center absolute-center">
+                                        <i class="las la-spinner la-spin la-3x opacity-70"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="category-nav-element" data-id="3">
+                                <a href="https://demo.activeitzone.com/ecommerce/category/computer-accessories"
+                                    class="text-truncate text-reset py-2 px-3 d-block">
+                                    <img class="cat-image lazyload mr-2 opacity-60"
+                                        src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
+                                        data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/kTwoR2hUnTf1y6kAOmt9FUidF6Qo8IK0RkvGVMbi.jpg"
+                                        width="16" alt="Computer &amp; Accessories"
+                                        onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
+                                    <span class="cat-name">Computer &amp; Accessories</span>
+                                </a>
+                                <div class="sub-cat-menu c-scrollbar-light rounded shadow-lg p-4">
+                                    <div class="c-preloader text-center absolute-center">
+                                        <i class="las la-spinner la-spin la-3x opacity-70"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="category-nav-element" data-id="4">
+                                <a href="https://demo.activeitzone.com/ecommerce/category/automobile-motorcycle"
+                                    class="text-truncate text-reset py-2 px-3 d-block">
+                                    <img class="cat-image lazyload mr-2 opacity-60"
+                                        src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
+                                        data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/vafdWTltz6NGVOA2BOaSC3Y7PPFmxmSHX6KBhn4Z.jpg"
+                                        width="16" alt="Automobile &amp; Motorcycle"
+                                        onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
+                                    <span class="cat-name">Automobile &amp; Motorcycle</span>
+                                </a>
+                                <div class="sub-cat-menu c-scrollbar-light rounded shadow-lg p-4">
+                                    <div class="c-preloader text-center absolute-center">
+                                        <i class="las la-spinner la-spin la-3x opacity-70"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="category-nav-element" data-id="5">
+                                <a href="https://demo.activeitzone.com/ecommerce/category/kids-toy"
+                                    class="text-truncate text-reset py-2 px-3 d-block">
+                                    <img class="cat-image lazyload mr-2 opacity-60"
+                                        src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
+                                        data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/7Hpz9FWvKRNENKEXd13gqNPlFxz8LFJgCTFzlZbR.jpg"
+                                        width="16" alt="Kids &amp; toy"
+                                        onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
+                                    <span class="cat-name">Kids &amp; toy</span>
+                                </a>
+                                <div class="sub-cat-menu c-scrollbar-light rounded shadow-lg p-4">
+                                    <div class="c-preloader text-center absolute-center">
+                                        <i class="las la-spinner la-spin la-3x opacity-70"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="category-nav-element" data-id="6">
+                                <a href="https://demo.activeitzone.com/ecommerce/category/sports-outdoor"
+                                    class="text-truncate text-reset py-2 px-3 d-block">
+                                    <img class="cat-image lazyload mr-2 opacity-60"
+                                        src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
+                                        data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/jNdturV05yXj1UsPHurYFoJs410G39D5C2bnPGor.jpg"
+                                        width="16" alt="Sports &amp; outdoor"
+                                        onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
+                                    <span class="cat-name">Sports &amp; outdoor</span>
+                                </a>
+                                <div class="sub-cat-menu c-scrollbar-light rounded shadow-lg p-4">
+                                    <div class="c-preloader text-center absolute-center">
+                                        <i class="las la-spinner la-spin la-3x opacity-70"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="category-nav-element" data-id="7">
+                                <a href="https://demo.activeitzone.com/ecommerce/category/jewelry-watches"
+                                    class="text-truncate text-reset py-2 px-3 d-block">
+                                    <img class="cat-image lazyload mr-2 opacity-60"
+                                        src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
+                                        data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/R6AnVQNPd89NvPZelfi4F8rfkbFIiu8XteN74BFz.jpg"
+                                        width="16" alt="Jewelry &amp; Watches"
+                                        onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
+                                    <span class="cat-name">Jewelry &amp; Watches</span>
+                                </a>
+                                <div class="sub-cat-menu c-scrollbar-light rounded shadow-lg p-4">
+                                    <div class="c-preloader text-center absolute-center">
+                                        <i class="las la-spinner la-spin la-3x opacity-70"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="category-nav-element" data-id="8">
+                                <a href="https://demo.activeitzone.com/ecommerce/category/cellphones-tabs"
+                                    class="text-truncate text-reset py-2 px-3 d-block">
+                                    <img class="cat-image lazyload mr-2 opacity-60"
+                                        src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
+                                        data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/JjUx7LIwj97wFpsgffYGwYxtdEiQLVGPtBWYE4wq.jpg"
+                                        width="16" alt="Cellphones &amp; Tabs"
+                                        onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
+                                    <span class="cat-name">Cellphones &amp; Tabs</span>
+                                </a>
+                                <div class="sub-cat-menu c-scrollbar-light rounded shadow-lg p-4">
+                                    <div class="c-preloader text-center absolute-center">
+                                        <i class="las la-spinner la-spin la-3x opacity-70"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="category-nav-element" data-id="9">
+                                <a href="https://demo.activeitzone.com/ecommerce/category/beauty-health-hair"
+                                    class="text-truncate text-reset py-2 px-3 d-block">
+                                    <img class="cat-image lazyload mr-2 opacity-60"
+                                        src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
+                                        data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/KHQpABDau3b7oMyDFNSJYSMgprsQ1Kq5uij9fw3U.jpg"
+                                        width="16" alt="Beauty, Health &amp; Hair"
+                                        onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
+                                    <span class="cat-name">Beauty, Health &amp; Hair</span>
+                                </a>
+                                <div class="sub-cat-menu c-scrollbar-light rounded shadow-lg p-4">
+                                    <div class="c-preloader text-center absolute-center">
+                                        <i class="las la-spinner la-spin la-3x opacity-70"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="category-nav-element" data-id="10">
+                                <a href="https://demo.activeitzone.com/ecommerce/category/home-improvement-tools"
+                                    class="text-truncate text-reset py-2 px-3 d-block">
+                                    <img class="cat-image lazyload mr-2 opacity-60"
+                                        src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
+                                        data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/9hMfQOGGQrpmFO1KEbTJ9SijUxM8p8TEsm6o4FVp.jpg"
+                                        width="16" alt="Home Improvement &amp; Tools"
+                                        onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
+                                    <span class="cat-name">Home Improvement &amp; Tools</span>
+                                </a>
+                                <div class="sub-cat-menu c-scrollbar-light rounded shadow-lg p-4">
+                                    <div class="c-preloader text-center absolute-center">
+                                        <i class="las la-spinner la-spin la-3x opacity-70"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="category-nav-element" data-id="11">
+                                <a href="https://demo.activeitzone.com/ecommerce/category/home-decoration-appliance"
+                                    class="text-truncate text-reset py-2 px-3 d-block">
+                                    <img class="cat-image lazyload mr-2 opacity-60"
+                                        src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
+                                        data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/Es0gLpejDOBTdBz4CN1BlT12tFTJDjNDXhtEoVEe.jpg"
+                                        width="16" alt="Home decoration &amp; Appliance"
+                                        onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
+                                    <span class="cat-name">Home decoration &amp; Appliance</span>
+                                </a>
+                                <div class="sub-cat-menu c-scrollbar-light rounded shadow-lg p-4">
+                                    <div class="c-preloader text-center absolute-center">
+                                        <i class="las la-spinner la-spin la-3x opacity-70"></i>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="list-unstyled categories no-scrollbar py-2 mb-0 text-left">
-                        <li class="category-nav-element" data-id="1">
+                </div>
+
+
+                <div class=" col-lg-7 ">
+                    <div class="aiz-carousel dots-inside-bottom mobile-img-auto-height slick-initialized slick-slider slick-dotted"
+                        data-arrows="true" data-dots="true" data-autoplay="true"><button type="button"
+                            class="slick-prev slick-arrow" aria-disabled="false" style=""><i
+                                class="las la-angle-left"></i></button>
+                        <div class="slick-list draggable">
+                            <div class="slick-track"
+                                style="opacity: 1; width: 1528px; transform: translate3d(-382px, 0px, 0px);">
+                                <div class="slick-slide" data-slick-index="0" aria-hidden="true" style="width: 382px;"
+                                    role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00"
+                                    tabindex="-1">
+                                    <div>
+                                        <div class="carousel-box" style="width: 100%; display: inline-block;">
+                                            <a href="https://codecanyon.net/item/active-ecommerce-cms/23471405?s_rank=23"
+                                                tabindex="-1">
+                                                <img class="d-block mw-100 img-fit rounded shadow-sm overflow-hidden"
+                                                    src="https://demo.activeitzone.com/ecommerce/public/uploads/all/faEi771HIT7B9yPye5YqXip8EBMXa4VQBLhksq2g.png"
+                                                    alt="Active eCommerce CMS promo" height="315"
+                                                    onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder-rect.jpg';">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slick-slide slick-current slick-active" data-slick-index="1"
+                                    aria-hidden="false" style="width: 382px;" role="tabpanel" id="slick-slide01"
+                                    aria-describedby="slick-slide-control01">
+                                    <div>
+                                        <div class="carousel-box" style="width: 100%; display: inline-block;">
+                                            <a href="https://codecanyon.net/item/active-ecommerce-cms/23471405?s_rank=23"
+                                                tabindex="0">
+                                                <img class="d-block mw-100 img-fit rounded shadow-sm overflow-hidden"
+                                                    src="https://demo.activeitzone.com/ecommerce/public/uploads/all/0Bf6AZrON13NRpLxc7S6bua38uRBUuiwCH7fN3LG.png"
+                                                    alt="Active eCommerce CMS promo" height="315"
+                                                    onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder-rect.jpg';">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slick-slide" data-slick-index="2" aria-hidden="true" style="width: 382px;"
+                                    role="tabpanel" id="slick-slide02" aria-describedby="slick-slide-control02"
+                                    tabindex="-1">
+                                    <div>
+                                        <div class="carousel-box" style="width: 100%; display: inline-block;">
+                                            <a href="https://codecanyon.net/item/active-ecommerce-cms/23471405?s_rank=23"
+                                                tabindex="-1">
+                                                <img class="d-block mw-100 img-fit rounded shadow-sm overflow-hidden"
+                                                    src="https://demo.activeitzone.com/ecommerce/public/uploads/all/HordtzBXzs1JUTTFpRyGLPYO26Z9J4IVt3jLeOsM.png"
+                                                    alt="Active eCommerce CMS promo" height="315"
+                                                    onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder-rect.jpg';">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slick-slide" data-slick-index="3" aria-hidden="true" style="width: 382px;"
+                                    role="tabpanel" id="slick-slide03" aria-describedby="slick-slide-control03"
+                                    tabindex="-1">
+                                    <div>
+                                        <div class="carousel-box" style="width: 100%; display: inline-block;">
+                                            <a href="https://codecanyon.net/item/active-ecommerce-cms/23471405?s_rank=23"
+                                                tabindex="-1">
+                                                <img class="d-block mw-100 img-fit rounded shadow-sm overflow-hidden"
+                                                    src="https://demo.activeitzone.com/ecommerce/public/uploads/all/D336pBP0YKEHoa4NWUFCh1blXcGsYlTIjvdFnaGm.png"
+                                                    alt="Active eCommerce CMS promo" height="315"
+                                                    onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder-rect.jpg';">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><button type="button" class="slick-next slick-arrow" style=""
+                            aria-disabled="false"><i class="las la-angle-right"></i></button>
+                        <ul class="slick-dots" style="" role="tablist">
+                            <li class="" role="presentation"><button type="button" role="tab"
+                                    id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 4"
+                                    tabindex="-1">1</button></li>
+                            <li role="presentation" class="slick-active"><button type="button" role="tab"
+                                    id="slick-slide-control01" aria-controls="slick-slide01" aria-label="2 of 4"
+                                    tabindex="0" aria-selected="true">2</button></li>
+                            <li class="" role="presentation"><button type="button" role="tab"
+                                    id="slick-slide-control02" aria-controls="slick-slide02" aria-label="3 of 4"
+                                    tabindex="-1">3</button></li>
+                            <li role="presentation" class=""><button type="button" role="tab"
+                                    id="slick-slide-control03" aria-controls="slick-slide03" aria-label="4 of 4"
+                                    tabindex="-1">4</button></li>
+                        </ul>
+                    </div>
+                    <ul class="list-unstyled mb-0 row gutters-5">
+                        <li class="minw-0 col-4 col-md mt-3">
                             <a href="https://demo.activeitzone.com/ecommerce/category/women-clothing-fashion"
-                                class="text-truncate text-reset py-2 px-3 d-block">
-                                <img class="cat-image lazyload mr-2 opacity-60"
-                                    src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
-                                    data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/46v0RI8PXlQa4Yy0IftaGaK9rZUQdLOAFkpnjRXT.jpg"
-                                    width="16" alt="Women Clothing &amp; Fashion"
-                                    onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
-                                <span class="cat-name">Women Clothing &amp; Fashion</span>
+                                class="d-block rounded bg-white p-2 text-reset shadow-sm">
+                                <img src="https://demo.activeitzone.com/ecommerce/public/uploads/all/1MUCmFKsjx73ETkmjx2DYGo3XgKPBDpr36r1b4OY.png"
+                                    data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/1MUCmFKsjx73ETkmjx2DYGo3XgKPBDpr36r1b4OY.png"
+                                    alt="Women Clothing &amp; Fashion" class="img-fit ls-is-cached lazyloaded"
+                                    height="78"
+                                    onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder-rect.jpg';">
+                                <div class="text-truncate fs-12 fw-600 mt-2 opacity-70">Women Clothing &amp; Fashion</div>
                             </a>
-                            <div class="sub-cat-menu c-scrollbar-light rounded shadow-lg p-4">
-                                <div class="c-preloader text-center absolute-center">
-                                    <i class="las la-spinner la-spin la-3x opacity-70"></i>
-                                </div>
-                            </div>
                         </li>
-                        <li class="category-nav-element" data-id="2">
-                            <a href="https://demo.activeitzone.com/ecommerce/category/men-clothing-fashion"
-                                class="text-truncate text-reset py-2 px-3 d-block">
-                                <img class="cat-image lazyload mr-2 opacity-60"
-                                    src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
-                                    data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/LHUk7AM6okO07NvMOkVB35JbQBCLGLjfbRBuUNHc.jpg"
-                                    width="16" alt="Men Clothing &amp; Fashion"
-                                    onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
-                                <span class="cat-name">Men Clothing &amp; Fashion</span>
+                        <li class="minw-0 col-4 col-md mt-3">
+                            <a href="https://demo.activeitzone.com/ecommerce/category/mobile-phones"
+                                class="d-block rounded bg-white p-2 text-reset shadow-sm">
+                                <img src="https://demo.activeitzone.com/ecommerce/public/uploads/all/JRAqGXo7vQD0rgAPzJnyFVjWJN4VlGR4eQTNkUKP.png"
+                                    data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/JRAqGXo7vQD0rgAPzJnyFVjWJN4VlGR4eQTNkUKP.png"
+                                    alt="Mobile Phones" class="img-fit ls-is-cached lazyloaded" height="78"
+                                    onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder-rect.jpg';">
+                                <div class="text-truncate fs-12 fw-600 mt-2 opacity-70">Mobile Phones</div>
                             </a>
-                            <div class="sub-cat-menu c-scrollbar-light rounded shadow-lg p-4">
-                                <div class="c-preloader text-center absolute-center">
-                                    <i class="las la-spinner la-spin la-3x opacity-70"></i>
-                                </div>
-                            </div>
                         </li>
-                        <li class="category-nav-element" data-id="3">
-                            <a href="https://demo.activeitzone.com/ecommerce/category/computer-accessories"
-                                class="text-truncate text-reset py-2 px-3 d-block">
-                                <img class="cat-image lazyload mr-2 opacity-60"
-                                    src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
-                                    data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/kTwoR2hUnTf1y6kAOmt9FUidF6Qo8IK0RkvGVMbi.jpg"
-                                    width="16" alt="Computer &amp; Accessories"
-                                    onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
-                                <span class="cat-name">Computer &amp; Accessories</span>
+                        <li class="minw-0 col-4 col-md mt-3">
+                            <a href="https://demo.activeitzone.com/ecommerce/category/women-dress-04vbn"
+                                class="d-block rounded bg-white p-2 text-reset shadow-sm">
+                                <img src="https://demo.activeitzone.com/ecommerce/public/uploads/all/xg4lbDBbbIKJeZGE1xkn3k0g3PVeprNNHmezOwhd.png"
+                                    data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/xg4lbDBbbIKJeZGE1xkn3k0g3PVeprNNHmezOwhd.png"
+                                    alt="Baby Dresses" class="img-fit ls-is-cached lazyloaded" height="78"
+                                    onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder-rect.jpg';">
+                                <div class="text-truncate fs-12 fw-600 mt-2 opacity-70">Baby Dresses</div>
                             </a>
-                            <div class="sub-cat-menu c-scrollbar-light rounded shadow-lg p-4">
-                                <div class="c-preloader text-center absolute-center">
-                                    <i class="las la-spinner la-spin la-3x opacity-70"></i>
-                                </div>
-                            </div>
                         </li>
-                        <li class="category-nav-element" data-id="4">
-                            <a href="https://demo.activeitzone.com/ecommerce/category/automobile-motorcycle"
-                                class="text-truncate text-reset py-2 px-3 d-block">
-                                <img class="cat-image lazyload mr-2 opacity-60"
-                                    src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
-                                    data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/vafdWTltz6NGVOA2BOaSC3Y7PPFmxmSHX6KBhn4Z.jpg"
-                                    width="16" alt="Automobile &amp; Motorcycle"
-                                    onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
-                                <span class="cat-name">Automobile &amp; Motorcycle</span>
+                        <li class="minw-0 col-4 col-md mt-3">
+                            <a href="https://demo.activeitzone.com/ecommerce/category/men-formal-dress-0odnx"
+                                class="d-block rounded bg-white p-2 text-reset shadow-sm">
+                                <img src="https://demo.activeitzone.com/ecommerce/public/uploads/all/lS4LNtTDlbBoEpwsxIieqVTd0WUiUGkj54SuKkPl.png"
+                                    data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/lS4LNtTDlbBoEpwsxIieqVTd0WUiUGkj54SuKkPl.png"
+                                    alt="Men Formal Dress" class="img-fit ls-is-cached lazyloaded" height="78"
+                                    onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder-rect.jpg';">
+                                <div class="text-truncate fs-12 fw-600 mt-2 opacity-70">Men Formal Dress</div>
                             </a>
-                            <div class="sub-cat-menu c-scrollbar-light rounded shadow-lg p-4">
-                                <div class="c-preloader text-center absolute-center">
-                                    <i class="las la-spinner la-spin la-3x opacity-70"></i>
-                                </div>
-                            </div>
                         </li>
-                        <li class="category-nav-element" data-id="5">
-                            <a href="https://demo.activeitzone.com/ecommerce/category/kids-toy"
-                                class="text-truncate text-reset py-2 px-3 d-block">
-                                <img class="cat-image lazyload mr-2 opacity-60"
-                                    src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
-                                    data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/7Hpz9FWvKRNENKEXd13gqNPlFxz8LFJgCTFzlZbR.jpg"
-                                    width="16" alt="Kids &amp; toy"
-                                    onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
-                                <span class="cat-name">Kids &amp; toy</span>
+                        <li class="minw-0 col-4 col-md mt-3">
+                            <a href="https://demo.activeitzone.com/ecommerce/category/doll-niia5"
+                                class="d-block rounded bg-white p-2 text-reset shadow-sm">
+                                <img src="https://demo.activeitzone.com/ecommerce/public/uploads/all/YxqVTyAxbqDphgEHg8pSBiQ7Z6RVAZgrMMRKp4iX.png"
+                                    data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/YxqVTyAxbqDphgEHg8pSBiQ7Z6RVAZgrMMRKp4iX.png"
+                                    alt="Kids &amp; Toy" class="img-fit ls-is-cached lazyloaded" height="78"
+                                    onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder-rect.jpg';">
+                                <div class="text-truncate fs-12 fw-600 mt-2 opacity-70">Kids &amp; Toy</div>
                             </a>
-                            <div class="sub-cat-menu c-scrollbar-light rounded shadow-lg p-4">
-                                <div class="c-preloader text-center absolute-center">
-                                    <i class="las la-spinner la-spin la-3x opacity-70"></i>
-                                </div>
-                            </div>
                         </li>
-                        <li class="category-nav-element" data-id="6">
-                            <a href="https://demo.activeitzone.com/ecommerce/category/sports-outdoor"
-                                class="text-truncate text-reset py-2 px-3 d-block">
-                                <img class="cat-image lazyload mr-2 opacity-60"
-                                    src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
-                                    data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/jNdturV05yXj1UsPHurYFoJs410G39D5C2bnPGor.jpg"
-                                    width="16" alt="Sports &amp; outdoor"
-                                    onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
-                                <span class="cat-name">Sports &amp; outdoor</span>
+                        <li class="minw-0 col-4 col-md mt-3">
+                            <a href="https://demo.activeitzone.com/ecommerce/category/tools-vgs3d"
+                                class="d-block rounded bg-white p-2 text-reset shadow-sm">
+                                <img src="https://demo.activeitzone.com/ecommerce/public/uploads/all/0xydX0EqPmMjchMD9wc337vlHbZk9BQLIPlfisEp.png"
+                                    data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/0xydX0EqPmMjchMD9wc337vlHbZk9BQLIPlfisEp.png"
+                                    alt="Tools" class="img-fit ls-is-cached lazyloaded" height="78"
+                                    onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder-rect.jpg';">
+                                <div class="text-truncate fs-12 fw-600 mt-2 opacity-70">Tools</div>
                             </a>
-                            <div class="sub-cat-menu c-scrollbar-light rounded shadow-lg p-4">
-                                <div class="c-preloader text-center absolute-center">
-                                    <i class="las la-spinner la-spin la-3x opacity-70"></i>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="category-nav-element" data-id="7">
-                            <a href="https://demo.activeitzone.com/ecommerce/category/jewelry-watches"
-                                class="text-truncate text-reset py-2 px-3 d-block">
-                                <img class="cat-image lazyload mr-2 opacity-60"
-                                    src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
-                                    data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/R6AnVQNPd89NvPZelfi4F8rfkbFIiu8XteN74BFz.jpg"
-                                    width="16" alt="Jewelry &amp; Watches"
-                                    onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
-                                <span class="cat-name">Jewelry &amp; Watches</span>
-                            </a>
-                            <div class="sub-cat-menu c-scrollbar-light rounded shadow-lg p-4">
-                                <div class="c-preloader text-center absolute-center">
-                                    <i class="las la-spinner la-spin la-3x opacity-70"></i>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="category-nav-element" data-id="8">
-                            <a href="https://demo.activeitzone.com/ecommerce/category/cellphones-tabs"
-                                class="text-truncate text-reset py-2 px-3 d-block">
-                                <img class="cat-image lazyload mr-2 opacity-60"
-                                    src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
-                                    data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/JjUx7LIwj97wFpsgffYGwYxtdEiQLVGPtBWYE4wq.jpg"
-                                    width="16" alt="Cellphones &amp; Tabs"
-                                    onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
-                                <span class="cat-name">Cellphones &amp; Tabs</span>
-                            </a>
-                            <div class="sub-cat-menu c-scrollbar-light rounded shadow-lg p-4">
-                                <div class="c-preloader text-center absolute-center">
-                                    <i class="las la-spinner la-spin la-3x opacity-70"></i>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="category-nav-element" data-id="9">
-                            <a href="https://demo.activeitzone.com/ecommerce/category/beauty-health-hair"
-                                class="text-truncate text-reset py-2 px-3 d-block">
-                                <img class="cat-image lazyload mr-2 opacity-60"
-                                    src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
-                                    data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/KHQpABDau3b7oMyDFNSJYSMgprsQ1Kq5uij9fw3U.jpg"
-                                    width="16" alt="Beauty, Health &amp; Hair"
-                                    onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
-                                <span class="cat-name">Beauty, Health &amp; Hair</span>
-                            </a>
-                            <div class="sub-cat-menu c-scrollbar-light rounded shadow-lg p-4">
-                                <div class="c-preloader text-center absolute-center">
-                                    <i class="las la-spinner la-spin la-3x opacity-70"></i>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="category-nav-element" data-id="10">
-                            <a href="https://demo.activeitzone.com/ecommerce/category/home-improvement-tools"
-                                class="text-truncate text-reset py-2 px-3 d-block">
-                                <img class="cat-image lazyload mr-2 opacity-60"
-                                    src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
-                                    data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/9hMfQOGGQrpmFO1KEbTJ9SijUxM8p8TEsm6o4FVp.jpg"
-                                    width="16" alt="Home Improvement &amp; Tools"
-                                    onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
-                                <span class="cat-name">Home Improvement &amp; Tools</span>
-                            </a>
-                            <div class="sub-cat-menu c-scrollbar-light rounded shadow-lg p-4">
-                                <div class="c-preloader text-center absolute-center">
-                                    <i class="las la-spinner la-spin la-3x opacity-70"></i>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="category-nav-element" data-id="11">
-                            <a href="https://demo.activeitzone.com/ecommerce/category/home-decoration-appliance"
-                                class="text-truncate text-reset py-2 px-3 d-block">
-                                <img class="cat-image lazyload mr-2 opacity-60"
-                                    src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
-                                    data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/Es0gLpejDOBTdBz4CN1BlT12tFTJDjNDXhtEoVEe.jpg"
-                                    width="16" alt="Home decoration &amp; Appliance"
-                                    onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
-                                <span class="cat-name">Home decoration &amp; Appliance</span>
-                            </a>
-                            <div class="sub-cat-menu c-scrollbar-light rounded shadow-lg p-4">
-                                <div class="c-preloader text-center absolute-center">
-                                    <i class="las la-spinner la-spin la-3x opacity-70"></i>
-                                </div>
-                            </div>
                         </li>
                     </ul>
                 </div>
-            </div>
 
-
-            <div class=" col-lg-7 ">
-                <div class="aiz-carousel dots-inside-bottom mobile-img-auto-height" data-arrows="true"
-                    data-dots="true" data-autoplay="true">
-                    <div class="carousel-box">
-                        <a href="https://codecanyon.net/item/active-ecommerce-cms/23471405?s_rank=23">
-                            <img class="d-block mw-100 img-fit rounded shadow-sm overflow-hidden"
-                                src="https://demo.activeitzone.com/ecommerce/public/uploads/all/faEi771HIT7B9yPye5YqXip8EBMXa4VQBLhksq2g.png"
-                                alt="Active eCommerce CMS promo" height="315"
-                                onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder-rect.jpg';">
-                        </a>
-                    </div>
-                    <div class="carousel-box">
-                        <a href="https://codecanyon.net/item/active-ecommerce-cms/23471405?s_rank=23">
-                            <img class="d-block mw-100 img-fit rounded shadow-sm overflow-hidden"
-                                src="https://demo.activeitzone.com/ecommerce/public/uploads/all/0Bf6AZrON13NRpLxc7S6bua38uRBUuiwCH7fN3LG.png"
-                                alt="Active eCommerce CMS promo" height="315"
-                                onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder-rect.jpg';">
-                        </a>
-                    </div>
-                    <div class="carousel-box">
-                        <a href="https://codecanyon.net/item/active-ecommerce-cms/23471405?s_rank=23">
-                            <img class="d-block mw-100 img-fit rounded shadow-sm overflow-hidden"
-                                src="https://demo.activeitzone.com/ecommerce/public/uploads/all/HordtzBXzs1JUTTFpRyGLPYO26Z9J4IVt3jLeOsM.png"
-                                alt="Active eCommerce CMS promo" height="315"
-                                onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder-rect.jpg';">
-                        </a>
-                    </div>
-                    <div class="carousel-box">
-                        <a href="https://codecanyon.net/item/active-ecommerce-cms/23471405?s_rank=23">
-                            <img class="d-block mw-100 img-fit rounded shadow-sm overflow-hidden"
-                                src="https://demo.activeitzone.com/ecommerce/public/uploads/all/D336pBP0YKEHoa4NWUFCh1blXcGsYlTIjvdFnaGm.png"
-                                alt="Active eCommerce CMS promo" height="315"
-                                onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder-rect.jpg';">
-                        </a>
-                    </div>
-                </div>
-                <ul class="list-unstyled mb-0 row gutters-5">
-                    <li class="minw-0 col-4 col-md mt-3">
-                        <a href="https://demo.activeitzone.com/ecommerce/category/women-clothing-fashion"
-                            class="d-block rounded bg-white p-2 text-reset shadow-sm">
-                            <img src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
-                                data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/1MUCmFKsjx73ETkmjx2DYGo3XgKPBDpr36r1b4OY.png"
-                                alt="Women Clothing &amp; Fashion" class="lazyload img-fit" height="78"
-                                onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder-rect.jpg';">
-                            <div class="text-truncate fs-12 fw-600 mt-2 opacity-70">Women Clothing &amp;
-                                Fashion</div>
-                        </a>
-                    </li>
-                    <li class="minw-0 col-4 col-md mt-3">
-                        <a href="https://demo.activeitzone.com/ecommerce/category/mobile-phones"
-                            class="d-block rounded bg-white p-2 text-reset shadow-sm">
-                            <img src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
-                                data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/JRAqGXo7vQD0rgAPzJnyFVjWJN4VlGR4eQTNkUKP.png"
-                                alt="Mobile Phones" class="lazyload img-fit" height="78"
-                                onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder-rect.jpg';">
-                            <div class="text-truncate fs-12 fw-600 mt-2 opacity-70">Mobile Phones</div>
-                        </a>
-                    </li>
-                    <li class="minw-0 col-4 col-md mt-3">
-                        <a href="https://demo.activeitzone.com/ecommerce/category/women-dress-04vbn"
-                            class="d-block rounded bg-white p-2 text-reset shadow-sm">
-                            <img src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
-                                data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/xg4lbDBbbIKJeZGE1xkn3k0g3PVeprNNHmezOwhd.png"
-                                alt="Baby Dresses" class="lazyload img-fit" height="78"
-                                onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder-rect.jpg';">
-                            <div class="text-truncate fs-12 fw-600 mt-2 opacity-70">Baby Dresses</div>
-                        </a>
-                    </li>
-                    <li class="minw-0 col-4 col-md mt-3">
-                        <a href="https://demo.activeitzone.com/ecommerce/category/men-formal-dress-0odnx"
-                            class="d-block rounded bg-white p-2 text-reset shadow-sm">
-                            <img src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
-                                data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/lS4LNtTDlbBoEpwsxIieqVTd0WUiUGkj54SuKkPl.png"
-                                alt="Men Formal Dress" class="lazyload img-fit" height="78"
-                                onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder-rect.jpg';">
-                            <div class="text-truncate fs-12 fw-600 mt-2 opacity-70">Men Formal Dress</div>
-                        </a>
-                    </li>
-                    <li class="minw-0 col-4 col-md mt-3">
-                        <a href="https://demo.activeitzone.com/ecommerce/category/doll-niia5"
-                            class="d-block rounded bg-white p-2 text-reset shadow-sm">
-                            <img src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
-                                data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/YxqVTyAxbqDphgEHg8pSBiQ7Z6RVAZgrMMRKp4iX.png"
-                                alt="Kids &amp; Toy" class="lazyload img-fit" height="78"
-                                onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder-rect.jpg';">
-                            <div class="text-truncate fs-12 fw-600 mt-2 opacity-70">Kids &amp; Toy</div>
-                        </a>
-                    </li>
-                    <li class="minw-0 col-4 col-md mt-3">
-                        <a href="https://demo.activeitzone.com/ecommerce/category/tools-vgs3d"
-                            class="d-block rounded bg-white p-2 text-reset shadow-sm">
-                            <img src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
-                                data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/0xydX0EqPmMjchMD9wc337vlHbZk9BQLIPlfisEp.png"
-                                alt="Tools" class="lazyload img-fit" height="78"
-                                onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder-rect.jpg';">
-                            <div class="text-truncate fs-12 fw-600 mt-2 opacity-70">Tools</div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-lg-2 order-3 mt-3 mt-lg-0">
-                <div class="bg-white rounded shadow-sm">
-                    <div
-                        class="bg-soft-primary rounded-top p-3 d-flex align-items-center justify-content-center">
-                        <span class="fw-600 fs-16 mr-2 text-truncate">
-                            Todays Deal
-                        </span>
-                        <span class="badge badge-primary badge-inline">Hot</span>
-                    </div>
-                    <div class="c-scrollbar-light overflow-auto h-lg-400px p-2 bg-primary rounded-bottom">
-                        <div class="gutters-5 lg-no-gutters row row-cols-2 row-cols-lg-1">
-                            <div class="col mb-2">
-                                <a href="https://demo.activeitzone.com/ecommerce/product/Philips-Rice-Cooker-06L-4BWjg"
-                                    class="d-block p-2 text-reset bg-white h-100 rounded">
-                                    <div class="row gutters-5 align-items-center">
-                                        <div class="col-xxl">
-                                            <div class="img">
-                                                <img class="lazyload img-fit h-140px h-lg-80px"
-                                                    src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
-                                                    data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/5DpZmEosn1JKGBEv7LnmKaY2z3oN9TIlj6zSgSCs.jpg"
-                                                    alt="Philips Rice Cooker 0.6L"
-                                                    onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
+                <div class="col-lg-2 order-3 mt-3 mt-lg-0">
+                    <div class="bg-white rounded shadow-sm">
+                        <div class="bg-soft-primary rounded-top p-3 d-flex align-items-center justify-content-center">
+                            <span class="fw-600 fs-16 mr-2 text-truncate">
+                                Todays Deal
+                            </span>
+                            <span class="badge badge-primary badge-inline">Hot</span>
+                        </div>
+                        <div class="c-scrollbar-light overflow-auto h-lg-400px p-2 bg-primary rounded-bottom">
+                            <div class="gutters-5 lg-no-gutters row row-cols-2 row-cols-lg-1">
+                                <div class="col mb-2">
+                                    <a href="https://demo.activeitzone.com/ecommerce/product/Philips-Rice-Cooker-06L-4BWjg"
+                                        class="d-block p-2 text-reset bg-white h-100 rounded">
+                                        <div class="row gutters-5 align-items-center">
+                                            <div class="col-xxl">
+                                                <div class="img">
+                                                    <img class="img-fit h-140px h-lg-80px ls-is-cached lazyloaded"
+                                                        src="https://demo.activeitzone.com/ecommerce/public/uploads/all/5DpZmEosn1JKGBEv7LnmKaY2z3oN9TIlj6zSgSCs.jpg"
+                                                        data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/5DpZmEosn1JKGBEv7LnmKaY2z3oN9TIlj6zSgSCs.jpg"
+                                                        alt="Philips Rice Cooker 0.6L"
+                                                        onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
+                                                </div>
+                                            </div>
+                                            <div class="col-xxl">
+                                                <div class="fs-16">
+                                                    <span class="d-block text-primary fw-600">$64.750</span>
+                                                    <del class="d-block opacity-70">$68.000</del>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-xxl">
-                                            <div class="fs-16">
-                                                <span class="d-block text-primary fw-600">$64.750</span>
-                                                <del class="d-block opacity-70">$68.000</del>
+                                    </a>
+                                </div>
+                                <div class="col mb-2">
+                                    <a href="https://demo.activeitzone.com/ecommerce/product/adidas-mens-originals-poly-tape-shorts-en9ka"
+                                        class="d-block p-2 text-reset bg-white h-100 rounded">
+                                        <div class="row gutters-5 align-items-center">
+                                            <div class="col-xxl">
+                                                <div class="img">
+                                                    <img class="img-fit h-140px h-lg-80px ls-is-cached lazyloaded"
+                                                        src="https://demo.activeitzone.com/ecommerce/public/uploads/all/u1DDNkgW9HCKqNHOYURJY6dJaqwiSwBBQj8S0jLH.png"
+                                                        data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/u1DDNkgW9HCKqNHOYURJY6dJaqwiSwBBQj8S0jLH.png"
+                                                        alt="Adidas Men's Originals Poly Tape Shorts"
+                                                        onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
+                                                </div>
+                                            </div>
+                                            <div class="col-xxl">
+                                                <div class="fs-16">
+                                                    <span class="d-block text-primary fw-600">$102.000</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col mb-2">
-                                <a href="https://demo.activeitzone.com/ecommerce/product/adidas-mens-originals-poly-tape-shorts-en9ka"
-                                    class="d-block p-2 text-reset bg-white h-100 rounded">
-                                    <div class="row gutters-5 align-items-center">
-                                        <div class="col-xxl">
-                                            <div class="img">
-                                                <img class="lazyload img-fit h-140px h-lg-80px"
-                                                    src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
-                                                    data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/u1DDNkgW9HCKqNHOYURJY6dJaqwiSwBBQj8S0jLH.png"
-                                                    alt="Adidas Men&#039;s Originals Poly Tape Shorts"
-                                                    onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
+                                    </a>
+                                </div>
+                                <div class="col mb-2">
+                                    <a href="https://demo.activeitzone.com/ecommerce/product/adidas-womens-cropped-slim-polyester-shorts-jvdi7"
+                                        class="d-block p-2 text-reset bg-white h-100 rounded">
+                                        <div class="row gutters-5 align-items-center">
+                                            <div class="col-xxl">
+                                                <div class="img">
+                                                    <img class="img-fit h-140px h-lg-80px ls-is-cached lazyloaded"
+                                                        src="https://demo.activeitzone.com/ecommerce/public/uploads/all/8LmfSZEGCktshcYjefNylyAHRdFwPqkKz7hwVG9R.png"
+                                                        data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/8LmfSZEGCktshcYjefNylyAHRdFwPqkKz7hwVG9R.png"
+                                                        alt="Nautica Voyage By Nautica For Men Eau De Toilette Spray"
+                                                        onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
+                                                </div>
+                                            </div>
+                                            <div class="col-xxl">
+                                                <div class="fs-16">
+                                                    <span class="d-block text-primary fw-600">$65.000</span>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-xxl">
-                                            <div class="fs-16">
-                                                <span class="d-block text-primary fw-600">$102.000</span>
+                                    </a>
+                                </div>
+                                <div class="col mb-2">
+                                    <a href="https://demo.activeitzone.com/ecommerce/product/nike-men-mercurial-superfly-7-elite-firm-ground-football-shoe-zlwgn"
+                                        class="d-block p-2 text-reset bg-white h-100 rounded">
+                                        <div class="row gutters-5 align-items-center">
+                                            <div class="col-xxl">
+                                                <div class="img">
+                                                    <img class="img-fit h-140px h-lg-80px ls-is-cached lazyloaded"
+                                                        src="https://demo.activeitzone.com/ecommerce/public/uploads/all/LfCYkZUyEVnUSjqjznaA6MVuLETNLDkaTMnCud9F.png"
+                                                        data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/LfCYkZUyEVnUSjqjznaA6MVuLETNLDkaTMnCud9F.png"
+                                                        alt="Under Armour Men's Charged Assert 9 Running Shoe"
+                                                        onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
+                                                </div>
+                                            </div>
+                                            <div class="col-xxl">
+                                                <div class="fs-16">
+                                                    <span class="d-block text-primary fw-600">$97.200</span>
+                                                    <del class="d-block opacity-70">$120.000</del>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col mb-2">
-                                <a href="https://demo.activeitzone.com/ecommerce/product/adidas-womens-cropped-slim-polyester-shorts-jvdi7"
-                                    class="d-block p-2 text-reset bg-white h-100 rounded">
-                                    <div class="row gutters-5 align-items-center">
-                                        <div class="col-xxl">
-                                            <div class="img">
-                                                <img class="lazyload img-fit h-140px h-lg-80px"
-                                                    src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
-                                                    data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/8LmfSZEGCktshcYjefNylyAHRdFwPqkKz7hwVG9R.png"
-                                                    alt="Nautica Voyage By Nautica For Men Eau De Toilette Spray"
-                                                    onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
+                                    </a>
+                                </div>
+                                <div class="col mb-2">
+                                    <a href="https://demo.activeitzone.com/ecommerce/product/FIFA-22-Standard---PC-Online-Game-Code-22545"
+                                        class="d-block p-2 text-reset bg-white h-100 rounded">
+                                        <div class="row gutters-5 align-items-center">
+                                            <div class="col-xxl">
+                                                <div class="img">
+                                                    <img class="img-fit h-140px h-lg-80px ls-is-cached lazyloaded"
+                                                        src="https://demo.activeitzone.com/ecommerce/public/uploads/all/4gmGnYIZhgatZRJsxrhXVW2qO0aoLLdZT8U6qOQE.png"
+                                                        data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/4gmGnYIZhgatZRJsxrhXVW2qO0aoLLdZT8U6qOQE.png"
+                                                        alt="FIFA 22 Standard - PC [Online Game Code]"
+                                                        onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
+                                                </div>
+                                            </div>
+                                            <div class="col-xxl">
+                                                <div class="fs-16">
+                                                    <span class="d-block text-primary fw-600">$56.050</span>
+                                                    <del class="d-block opacity-70">$59.000</del>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-xxl">
-                                            <div class="fs-16">
-                                                <span class="d-block text-primary fw-600">$65.000</span>
+                                    </a>
+                                </div>
+                                <div class="col mb-2">
+                                    <a href="https://demo.activeitzone.com/ecommerce/product/apple-iphone-14-pro-128gb-512gb-deep-purple-unlocked"
+                                        class="d-block p-2 text-reset bg-white h-100 rounded">
+                                        <div class="row gutters-5 align-items-center">
+                                            <div class="col-xxl">
+                                                <div class="img">
+                                                    <img class="img-fit h-140px h-lg-80px lazyloaded"
+                                                        src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
+                                                        data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/IaqgwBAe6tTXCfDwHIRham8S5rFXLC77elMybtZC.webp"
+                                                        alt="Apple iPhone 14 Pro , 128GB, 512GB, Deep Purple- Unlocked"
+                                                        onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
+                                                </div>
+                                            </div>
+                                            <div class="col-xxl">
+                                                <div class="fs-16">
+                                                    <span class="d-block text-primary fw-600">$999.000</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col mb-2">
-                                <a href="https://demo.activeitzone.com/ecommerce/product/nike-men-mercurial-superfly-7-elite-firm-ground-football-shoe-zlwgn"
-                                    class="d-block p-2 text-reset bg-white h-100 rounded">
-                                    <div class="row gutters-5 align-items-center">
-                                        <div class="col-xxl">
-                                            <div class="img">
-                                                <img class="lazyload img-fit h-140px h-lg-80px"
-                                                    src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
-                                                    data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/LfCYkZUyEVnUSjqjznaA6MVuLETNLDkaTMnCud9F.png"
-                                                    alt="Under Armour Men&#039;s Charged Assert 9 Running Shoe"
-                                                    onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
-                                            </div>
-                                        </div>
-                                        <div class="col-xxl">
-                                            <div class="fs-16">
-                                                <span class="d-block text-primary fw-600">$97.200</span>
-                                                <del class="d-block opacity-70">$120.000</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col mb-2">
-                                <a href="https://demo.activeitzone.com/ecommerce/product/FIFA-22-Standard---PC-Online-Game-Code-22545"
-                                    class="d-block p-2 text-reset bg-white h-100 rounded">
-                                    <div class="row gutters-5 align-items-center">
-                                        <div class="col-xxl">
-                                            <div class="img">
-                                                <img class="lazyload img-fit h-140px h-lg-80px"
-                                                    src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
-                                                    data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/4gmGnYIZhgatZRJsxrhXVW2qO0aoLLdZT8U6qOQE.png"
-                                                    alt="FIFA 22 Standard - PC [Online Game Code]"
-                                                    onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
-                                            </div>
-                                        </div>
-                                        <div class="col-xxl">
-                                            <div class="fs-16">
-                                                <span class="d-block text-primary fw-600">$56.050</span>
-                                                <del class="d-block opacity-70">$59.000</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col mb-2">
-                                <a href="https://demo.activeitzone.com/ecommerce/product/apple-iphone-14-pro-128gb-512gb-deep-purple-unlocked"
-                                    class="d-block p-2 text-reset bg-white h-100 rounded">
-                                    <div class="row gutters-5 align-items-center">
-                                        <div class="col-xxl">
-                                            <div class="img">
-                                                <img class="lazyload img-fit h-140px h-lg-80px"
-                                                    src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg"
-                                                    data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/IaqgwBAe6tTXCfDwHIRham8S5rFXLC77elMybtZC.webp"
-                                                    alt="Apple iPhone 14 Pro , 128GB, 512GB, Deep Purple- Unlocked"
-                                                    onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
-                                            </div>
-                                        </div>
-                                        <div class="col-xxl">
-                                            <div class="fs-16">
-                                                <span class="d-block text-primary fw-600">$999.000</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
-</div> --}}
 
 
 
@@ -500,60 +549,60 @@
                             <div class="slick-track"
                                 style="opacity: 1; width: 2316px; transform: translate3d(0px, 0px, 0px);">
                                 @foreach ($products as $v => $product)
-                                <div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false"
-                                    style="width: 193px;">
-                                    <div>
-                                        <div class="carousel-box" style="width: 100%; display: inline-block;">
-                                            <div
-                                                class="aiz-card-box border border-light rounded hov-shadow-md mt-1 mb-2 has-transition bg-white">
-                                                <div class="position-relative">
-                                                    <a href="{{ route('product.details' ,['slug' => $product->slug]) }}"
-                                                        class="d-block" tabindex="0">
-                                                        <img class="img-fit mx-auto h-140px h-md-210px lazyloaded"
-                                                            src="{{ $product->image_path }}"
-                                                            data-src="{{ $product->image_path }}"
-                                                            alt="{{ $product->name }}"
-                                                            >
-                                                    </a>
-                                                    <div class="absolute-top-right aiz-p-hov-icon">
-                                                        <a href="javascript:void(0)" onclick="addToWishList(161)"
-                                                            data-toggle="tooltip" data-title="Add to wishlist"
-                                                            data-placement="left" tabindex="0">
-                                                            <i class="la la-heart-o"></i>
+                                    <div class="slick-slide slick-current slick-active"
+                                        data-slick-index="{{ $v }}" aria-hidden="false" style="width: 193px;">
+                                        <div>
+                                            <div class="carousel-box" style="width: 100%; display: inline-block;">
+                                                <div
+                                                    class="aiz-card-box border border-light rounded hov-shadow-md mt-1 mb-2 has-transition bg-white">
+                                                    <div class="position-relative">
+                                                        <a href="{{ route('product.details', ['slug' => $product->slug]) }}"
+                                                            class="d-block" tabindex="0">
+                                                            <img class="img-fit mx-auto h-140px h-md-210px lazyloaded"
+                                                                src="{{ $product->image_path }}"
+                                                                data-src="{{ $product->image_path }}"
+                                                                alt="{{ $product->name }}">
                                                         </a>
-                                                        <a href="javascript:void(0)" onclick="addToCompare(161)"
-                                                            data-toggle="tooltip" data-title="Add to compare"
-                                                            data-placement="left" tabindex="0">
-                                                            <i class="las la-sync"></i>
-                                                        </a>
-                                                        <a href="javascript:void(0)" onclick="showAddToCartModal(161)"
-                                                            data-toggle="tooltip" data-title="Add to cart"
-                                                            data-placement="left" tabindex="0">
-                                                            <i class="las la-shopping-cart"></i>
-                                                        </a>
+                                                        <div class="absolute-top-right aiz-p-hov-icon">
+                                                            <a href="javascript:void(0)" onclick="addToWishList(161)"
+                                                                data-toggle="tooltip" data-title="Add to wishlist"
+                                                                data-placement="left" tabindex="0">
+                                                                <i class="la la-heart-o"></i>
+                                                            </a>
+                                                            <a href="javascript:void(0)" onclick="addToCompare(161)"
+                                                                data-toggle="tooltip" data-title="Add to compare"
+                                                                data-placement="left" tabindex="0">
+                                                                <i class="las la-sync"></i>
+                                                            </a>
+                                                            <a href="javascript:void(0)" onclick="showAddToCartModal(161)"
+                                                                data-toggle="tooltip" data-title="Add to cart"
+                                                                data-placement="left" tabindex="0">
+                                                                <i class="las la-shopping-cart"></i>
+                                                            </a>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="p-md-3 p-2 text-left">
-                                                    <div class="fs-15">
-                                                        <span class="fw-700 text-primary">R{{ $product->price }}</span>
-                                                    </div>
-                                                    <div class="rating rating-sm mt-1">
-                                                        <i class="las la-star active"></i><i
-                                                            class="las la-star active"></i><i
-                                                            class="las la-star active"></i><i
-                                                            class="las la-star active"></i><i
-                                                            class="las la-star active"></i>
-                                                    </div>
-                                                    <h3 class="fw-600 fs-13 text-truncate-2 lh-1-4 mb-0 h-35px">
-                                                        <a href="{{ route('product.details' ,['slug' => $product->slug]) }}"
-                                                            class="d-block text-reset" tabindex="0">{{ $product->name }}</a>
-                                                    </h3>
+                                                    <div class="p-md-3 p-2 text-left">
+                                                        <div class="fs-15">
+                                                            <span class="fw-700 text-primary">R{{ $product->price }}</span>
+                                                        </div>
+                                                        <div class="rating rating-sm mt-1">
+                                                            <i class="las la-star active"></i><i
+                                                                class="las la-star active"></i><i
+                                                                class="las la-star active"></i><i
+                                                                class="las la-star active"></i><i
+                                                                class="las la-star active"></i>
+                                                        </div>
+                                                        <h3 class="fw-600 fs-13 text-truncate-2 lh-1-4 mb-0 h-35px">
+                                                            <a href="{{ route('product.details', ['slug' => $product->slug]) }}"
+                                                                class="d-block text-reset"
+                                                                tabindex="0">{{ $product->name }}</a>
+                                                        </h3>
 
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                                 @endforeach
 
                             </div>
@@ -576,15 +625,15 @@
                     <a href="/shop" class="ml-auto mr-0 btn btn-primary btn-sm shadow-md w-100 w-md-auto">View More</a>
                 </div>
                 @foreach ($products as $product)
-                <div class="aiz-carousel gutters-10 half-outside-arrow" data-items="6" data-xl-items="5"
-                    data-lg-items="4" data-md-items="3" data-sm-items="2" data-xs-items="2" data-arrows='true'>
+                    <div class="aiz-carousel gutters-10 half-outside-arrow" data-items="6" data-xl-items="5"
+                        data-lg-items="4" data-md-items="3" data-sm-items="2" data-xs-items="2" data-arrows='true'>
 
                         <div class="carousel-box">
                             <div
                                 class="aiz-card-box border border-light rounded hov-shadow-md mt-1 mb-2 has-transition bg-white">
                                 <span class="badge-custom">OFF<span class="box ml-1 mr-0">&nbsp;20%</span></span>
                                 <div class="position-relative">
-                                    <a href="{{ route('product.details' , ['slug' => $product->slug]) }}" class="d-block">
+                                    <a href="{{ route('product.details', ['slug' => $product->slug]) }}" class="d-block">
                                         <img class="img-fit lazyload mx-auto h-140px h-md-210px"
                                             src="{{ $product->image_path }}" data-src="{{ $product->image_path }}"
                                             alt="{{ $product->name }}">
@@ -627,7 +676,7 @@
                         </div>
 
 
-                </div>
+                    </div>
                 @endforeach
             </div>
         </div>
@@ -904,8 +953,8 @@
                                             onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
                                     </a>
                                     <div class="absolute-top-right aiz-p-hov-icon">
-                                        <a href="javascript:void(0)" onclick="addToWishList(132)"
-                                            data-toggle="tooltip" data-title="Add to wishlist" data-placement="left">
+                                        <a href="javascript:void(0)" onclick="addToWishList(132)" data-toggle="tooltip"
+                                            data-title="Add to wishlist" data-placement="left">
                                             <i class="la la-heart-o"></i>
                                         </a>
                                         <a href="javascript:void(0)" onclick="addToCompare(132)" data-toggle="tooltip"
@@ -957,8 +1006,8 @@
                                         Wholesale
                                     </span>
                                     <div class="absolute-top-right aiz-p-hov-icon">
-                                        <a href="javascript:void(0)" onclick="addToWishList(131)"
-                                            data-toggle="tooltip" data-title="Add to wishlist" data-placement="left">
+                                        <a href="javascript:void(0)" onclick="addToWishList(131)" data-toggle="tooltip"
+                                            data-title="Add to wishlist" data-placement="left">
                                             <i class="la la-heart-o"></i>
                                         </a>
                                         <a href="javascript:void(0)" onclick="addToCompare(131)" data-toggle="tooltip"
@@ -1009,8 +1058,8 @@
                                         Wholesale
                                     </span>
                                     <div class="absolute-top-right aiz-p-hov-icon">
-                                        <a href="javascript:void(0)" onclick="addToWishList(130)"
-                                            data-toggle="tooltip" data-title="Add to wishlist" data-placement="left">
+                                        <a href="javascript:void(0)" onclick="addToWishList(130)" data-toggle="tooltip"
+                                            data-title="Add to wishlist" data-placement="left">
                                             <i class="la la-heart-o"></i>
                                         </a>
                                         <a href="javascript:void(0)" onclick="addToCompare(130)" data-toggle="tooltip"
@@ -1058,8 +1107,8 @@
                                             onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
                                     </a>
                                     <div class="absolute-top-right aiz-p-hov-icon">
-                                        <a href="javascript:void(0)" onclick="addToWishList(129)"
-                                            data-toggle="tooltip" data-title="Add to wishlist" data-placement="left">
+                                        <a href="javascript:void(0)" onclick="addToWishList(129)" data-toggle="tooltip"
+                                            data-title="Add to wishlist" data-placement="left">
                                             <i class="la la-heart-o"></i>
                                         </a>
                                         <a href="javascript:void(0)" onclick="addToCompare(129)" data-toggle="tooltip"
