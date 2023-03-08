@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('slug')->unique();
             $table->decimal('price', 10, 2);
             $table->integer('quantity');
+            $table->enum('status' , ['instock' , ['outofstock']]);
             $table->string('image_path')->nullable();
             $table->foreignId('category_id')->constrained('sub_categories');
             $table->timestamps();

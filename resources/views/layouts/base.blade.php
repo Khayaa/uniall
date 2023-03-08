@@ -485,6 +485,40 @@
 
 
         @yield('content')
+        <section class="bg-white border-top mt-auto">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-lg-3 col-md-6">
+                        <a class="text-reset border-left text-center p-4 d-block"
+                            href="https://demo.activeitzone.com/ecommerce/terms">
+                            <i class="la la-file-text la-3x text-primary mb-2"></i>
+                            <h4 class="h6">Terms &amp; conditions</h4>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <a class="text-reset border-left text-center p-4 d-block"
+                            href="https://demo.activeitzone.com/ecommerce/return-policy">
+                            <i class="la la-mail-reply la-3x text-primary mb-2"></i>
+                            <h4 class="h6">Return Policy</h4>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <a class="text-reset border-left text-center p-4 d-block"
+                            href="https://demo.activeitzone.com/ecommerce/support-policy">
+                            <i class="la la-support la-3x text-primary mb-2"></i>
+                            <h4 class="h6">Support Policy</h4>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <a class="text-reset border-left border-right text-center p-4 d-block"
+                            href="https://demo.activeitzone.com/ecommerce/privacy-policy">
+                            <i class="las la-exclamation-circle la-3x text-primary mb-2"></i>
+                            <h4 class="h6">Privacy Policy</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="bg-dark py-5 text-light footer-widget">
             <div class="container">
                 <div class="row">
@@ -706,7 +740,7 @@
                     </a>
                 </div>
                 <div class="col-auto">
-                    <a href="/cart" class="text-reset d-block text-center pb-2 pt-3">
+                    <a href="{{ route('cart') }}" class="text-reset d-block text-center pb-2 pt-3">
                         <span
                             class="align-items-center bg-primary border border-white border-width-4 d-flex justify-content-center position-relative rounded-circle size-50px"
                             style="margin-top: -33px;box-shadow: 0px -5px 10px rgb(0 0 0 / 15%);border-color: #fff !important;">

@@ -223,16 +223,16 @@
 
                             <div class="mt-3">
                                 <button type="button" class="btn btn-soft-primary mr-2 add-to-cart fw-600"
-                                    onclick="addToCart()">
+                                    wire:click.prevent="store({{ $product->id }}, '{{  $product->name}}' , {{ $product->price }})">
                                     <i class="las la-shopping-bag"></i>
                                     <span class="d-none d-md-inline-block"> Add to cart</span>
                                 </button>
-                                <button type="button" class="btn btn-primary buy-now fw-600" onclick="buyNow()">
+                                {{-- <button type="button" class="btn btn-primary buy-now fw-600" wire:click.prevent='store'>
                                     <i class="la la-shopping-cart"></i> Buy Now
-                                </button>
+                                </button> --}}
                                 <button type="button" class="btn btn-secondary out-of-stock fw-600 d-none"
                                     disabled="">
-                                    <i class="la la-cart-arrow-down"></i> Out of Stock
+                                    <i class="la la-cart-arrow-down"></i> {{ $product->status }}
                                 </button>
                             </div>
 

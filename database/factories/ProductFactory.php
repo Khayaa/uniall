@@ -22,6 +22,7 @@ class ProductFactory extends Factory
             'name' => $this->faker->word,
             'description' => $this->faker->sentence,
             'sku' => $this->faker->unique()->ean13,
+            'status' => 'instock',
             'slug' => str_replace(' ','-',$this->faker->text(200)),
             'price' => $this->faker->randomFloat(2, 10, 1000),
             'quantity' => $this->faker->numberBetween(0, 100),
