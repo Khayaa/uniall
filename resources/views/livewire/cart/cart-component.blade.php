@@ -40,9 +40,9 @@
                                     <div class="row gutters-5">
                                         <div class="col-lg-5 d-flex">
                                             <span class="mr-2 ml-0">
-                                                <img src="{{ $item->image_path }}"
+                                                <img src="{{ $item->model->image_path }}"
                                                     class="img-fit size-60px rounded"
-                                                    alt="{{ $item->image_path }}">
+                                                    alt="{{ $item->name }}">
                                             </span>
                                             <span class="fs-14 opacity-60">{{ $item->name }}</span>
                                         </div>
