@@ -141,13 +141,13 @@
 
                             <div class="row no-gutters mt-3">
                                 <div class="col-sm-2">
-                                    <div class="opacity-50 my-2">Price:</div>
+                                    <div class="opacity-50 my-2">Before:</div>
                                 </div>
                                 <div class="col-sm-10">
                                     <div class="fs-20 opacity-60">
                                         <del>
-                                            R{{ $product->price }}
-                                            <span>/pc</span>
+                                            R {{ $product->price / 100 * 20  +  $product->price}}
+                                            <span></span>
                                         </del>
                                     </div>
                                 </div>
@@ -160,9 +160,9 @@
                                 <div class="col-sm-10">
                                     <div class="">
                                         <strong class="h2 fw-600 text-primary">
-                                            R{{ $product->price }}
+                                            R {{$product->price}}
                                         </strong>
-                                        <span class="opacity-70">/pc</span>
+                                        <span class="opacity-70"></span>
                                     </div>
                                 </div>
                             </div>
@@ -172,14 +172,12 @@
                             <hr>
 
                             <form id="option-choice-form">
-                                <input type="hidden" name="_token"
-                                    value="8Bt3HhAUclFJSgHocX558Bx9g4laJu5UIbGkUqwm"> <input type="hidden"
-                                    name="id" value="117">
+
 
 
 
                                 <!-- Quantity + Add to cart -->
-                                <div class="row no-gutters">
+                                {{-- <div class="row no-gutters">
                                     <div class="col-sm-2">
                                         <div class="opacity-50 my-2">Quantity:</div>
                                     </div>
@@ -204,7 +202,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
 
                                 <hr>
 
@@ -227,9 +225,9 @@
                                     <i class="las la-shopping-bag"></i>
                                     <span class="d-none d-md-inline-block"> Add to cart</span>
                                 </button>
-                                {{-- <button type="button" class="btn btn-primary buy-now fw-600" wire:click.prevent='store'>
+                                <button type="button" class="btn btn-primary buy-now fw-600" wire:click.prevent="store({{ $product->id }}, '{{  $product->name}}' , {{ $product->price }})">
                                     <i class="la la-shopping-cart"></i> Buy Now
-                                </button> --}}
+                                </button>
                                 <button type="button" class="btn btn-secondary out-of-stock fw-600 d-none"
                                     disabled="">
                                     <i class="la la-cart-arrow-down"></i> {{ $product->status }}

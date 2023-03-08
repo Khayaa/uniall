@@ -12,6 +12,16 @@
             @if (Cart::count() > 0)
 
 
+                @if (session('message'))
+                <div class="alert alert-warning d-flex align-items-center" role="alert">
+                    <i class="check-circle-fill"> </i>
+                    <div>
+                        <p class="fw-600 fs-20 text-primary">{{ session('message') }}</p>
+
+                    </div>
+                  </div>
+                @endif
+
             <div class="row">
                 <div class="col-xxl-8 col-xl-10 mx-auto">
                     <div class="shadow-sm bg-white p-3 p-lg-4 rounded text-left">
@@ -43,31 +53,31 @@
                                         </div>
                                         <div class="col-lg col-4 order-2 order-lg-0 my-3 my-lg-0">
                                             <span class="opacity-60 fs-12 d-block d-lg-none">Tax</span>
-                                            <span class="fw-600 fs-16">R0.000</span>
+                                            <span class="fw-600 fs-16">R0.00</span>
                                         </div>
 
                                         <div class="col-lg col-6 order-4 order-lg-0">
                                             <div class="row no-gutters align-items-center aiz-plus-minus mr-2 ml-0">
                                                 <button class="btn col-auto btn-icon btn-sm btn-circle btn-light"
-                                                    type="button"  >
+                                                    type="button" wire:click.prevent="decreaseQuantity('{{ $item->rowId }}')" >
                                                     <i class="las la-minus"></i>
                                                 </button>
                                                 <input type="number"
-                                                    class="col border-0 text-center flex-grow-1 fs-16 input-number"
+                                                    class="col border-0 text-center flex-grow-1 fs-16 input-number" pattern="[0-9]*"
                                                     placeholder="1" value="{{ $item->qty }}" min="1" max="50000"
-                                                    onchange="updateQuantity(0, this)">
+                                                   >
                                                 <button class="btn col-auto btn-icon btn-sm btn-circle btn-light"
-                                                    type="button"  >
+                                                    type="button"  wire:click.prevent="increaseQuantity('{{ $item->rowId }}')">
                                                     <i class="las la-plus"></i>
                                                 </button>
                                             </div>
                                         </div>
                                         <div class="col-lg col-4 order-3 order-lg-0 my-3 my-lg-0">
                                             <span class="opacity-60 fs-12 d-block d-lg-none">Total</span>
-                                            <span class="fw-600 fs-16 text-primary"></span>
+                                            <span class="fw-600 fs-16 text-primary">R {{ $item->price * $item->qty}}</span>
                                         </div>
                                         <div class="col-lg-auto col-6 order-5 order-lg-0 text-right">
-                                            <a href="javascript:void(0)" onclick="removeFromCartView(event, 0)"
+                                            <a href="javascript:void(0)" wire:click.prevent="removeItem('{{ $item->rowId }}')"
                                                 class="btn btn-icon btn-sm btn-soft-primary btn-circle">
                                                 <i class="las la-trash"></i>
                                             </a>
@@ -85,7 +95,7 @@
 
                         <div class="px-3 py-2 mb-4 border-top d-flex justify-content-between">
                             <span class="opacity-60 fs-15">Subtotal</span>
-                            <span class="fw-600 fs-17">R &nbsp;{{ Cart::subtotal()}}</span>
+                            <span class="fw-600 fs-17">R &nbsp;{{ Cart::total()}}</span>
                         </div>
                         <div class="row align-items-center">
                             <div class="col-md-6 text-center text-md-left order-1 order-md-0">
@@ -95,13 +105,16 @@
                                 </a>
                             </div>
                             <div class="col-md-6 text-center text-md-right">
-                                <button class="btn btn-primary fw-600" onclick="showCheckoutModal()">Continue to
-                                    Shipping</button>
+                                <button class="btn btn-primary fw-600" onclick="showCheckoutModal()">Continue to Checkout</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            @else
+            <div class="alert alert-warning" role="alert">
+               <h4> No item in Cart , go to <a href="/shop" class="alert-link">Shop</a>. </h4>
+              </div>
             @endif
         </div>
     </section>

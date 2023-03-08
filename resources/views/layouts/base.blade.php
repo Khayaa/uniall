@@ -412,22 +412,20 @@
 
                         <div class="d-none d-lg-block  align-self-stretch ml-3 mr-0" data-hover="dropdown">
                             <div class="nav-cart-box dropdown h-100" id="cart_items">
-                                <a href="{{ route('cart') }}" class="d-flex align-items-center text-reset h-100"
-                                    data-toggle="dropdown" data-display="static">
+                                <a href="{{ route('cart') }}" class="d-flex align-items-center text-reset h-100">
                                     <i class="la la-shopping-cart la-2x opacity-80"></i>
                                     <span class="flex-grow-1 ml-1">
-                                        <span class="badge badge-primary badge-inline badge-pill cart-count">0</span>
+                                        <span class="badge badge-primary badge-inline badge-pill cart-count">
+                                            @if (Cart::count() > 0 )
+                                            {{ Cart::count() }}
+                                            @else
+                                            0
+                                            @endif
+                                        </span>
                                         <span class="nav-box-text d-none d-xl-block opacity-70">Cart</span>
                                     </span>
                                 </a>
-                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg p-0 stop-propagation">
 
-                                    <div class="text-center p-3">
-                                        <i class="las la-frown la-3x opacity-60 mb-3"></i>
-                                        <h3 class="h6 fw-700">Your Cart is empty</h3>
-                                    </div>
-
-                                </div>
                             </div>
                         </div>
 
@@ -748,17 +746,23 @@
                         </span>
                         <span class="d-block mt-1 fs-10 fw-600 opacity-60 ">
                             Cart
-                            (<span class="cart-count">0</span>)
+                            (<span class="cart-count">
+                             @if (Cart::count() > 0)
+                                {{ Cart::count() }}
+                                @else
+                                0
+                             @endif
+                            </span>)
                         </span>
                     </a>
                 </div>
                 <div class="col">
-                    <a href="https://demo.activeitzone.com/ecommerce/all-notifications"
+                    <a href=""
                         class="text-reset d-block text-center pb-2 pt-3">
                         <span class="d-inline-block position-relative px-2">
                             <i class="las la-bell fs-20 opacity-60 "></i>
                         </span>
-                        <span class="d-block fs-10 fw-600 opacity-60 "></span>
+                        <span class="d-block fs-10 fw-600 opacity-60 ">Notifications</span>
                     </a>
                 </div>
                 <div class="col">

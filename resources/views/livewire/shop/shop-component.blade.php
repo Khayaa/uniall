@@ -37,7 +37,7 @@
                                             data-title="Add to compare" data-placement="left">
                                             <i class="las la-sync"></i>
                                         </a>
-                                        <a href="javascript:void(0)" onclick="showAddToCartModal(2)"
+                                        <a href="javascript:void(0)" wire:click.prevent="store({{ $product->id }}, '{{  $product->name}}' , {{ $product->price }})"
                                             data-toggle="tooltip" data-title="Add to cart" data-placement="left">
                                             <i class="las la-shopping-cart"></i>
                                         </a>
@@ -54,7 +54,7 @@
                                             class='las la-star active'></i>
                                     </div>
                                     <h3 class="fw-600 fs-13 text-truncate-2 lh-1-4 mb-0 h-35px">
-                                        <a href="#" class="d-block text-reset">{{ $product->name }}</a>
+                                        <a href="{{ route('product.details', ['slug' => $product->slug]) }}" class="d-block text-reset">{{ $product->name }}</a>
                                     </h3>
 
                                 </div>
@@ -66,6 +66,7 @@
                 @endforeach
 
             </div>
+            <hr>
             {{ $all_products->links() }}
         </div>
     </section>

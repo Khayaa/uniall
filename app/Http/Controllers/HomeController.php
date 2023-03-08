@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Cart;
 
 class HomeController extends Controller
 {
@@ -16,6 +17,8 @@ class HomeController extends Controller
         $new_products  = Product::latest()->take(5);
         return view('Home-controller' , compact(['categories' , 'products']));
     }
+
+    
 
 
 }
