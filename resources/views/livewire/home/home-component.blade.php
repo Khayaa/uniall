@@ -550,7 +550,8 @@
                                 style="opacity: 1; width: 2316px; transform: translate3d(0px, 0px, 0px);">
                                 @foreach ($products as $v => $product)
                                     <div class="slick-slide slick-current slick-active"
-                                        data-slick-index="{{ $v }}" aria-hidden="false" style="width: 193px;">
+                                        data-slick-index="{{ $v }}" aria-hidden="false"
+                                        style="width: 193px;">
                                         <div>
                                             <div class="carousel-box" style="width: 100%; display: inline-block;">
                                                 <div
@@ -574,7 +575,8 @@
                                                                 data-placement="left" tabindex="0">
                                                                 <i class="las la-sync"></i>
                                                             </a>
-                                                            <a href="javascript:void(0)" wire:click.prevent="store({{ $product->id }}, '{{  $product->name}}' , {{ $product->price }})"
+                                                            <a href="javascript:void(0)"
+                                                                wire:click.prevent="store({{ $product->id }}, '{{ $product->name }}' , {{ $product->price }})"
                                                                 data-toggle="tooltip" data-title="Add to cart"
                                                                 data-placement="left" tabindex="0">
                                                                 <i class="las la-shopping-cart"></i>
@@ -583,7 +585,8 @@
                                                     </div>
                                                     <div class="p-md-3 p-2 text-left">
                                                         <div class="fs-15">
-                                                            <span class="fw-700 text-primary">R{{ $product->price }}</span>
+                                                            <span
+                                                                class="fw-700 text-primary">R{{ $product->price }} </span>
                                                         </div>
                                                         <div class="rating rating-sm mt-1">
                                                             <i class="las la-star active"></i><i
@@ -609,20 +612,463 @@
                         </div><button type="button" class="slick-next slick-arrow" style=""
                             aria-disabled="false"><i class="las la-angle-right"></i></button>
                     </div>
+                    <div id="section_featured"><section class="mb-4">
+                        <div class="container">
+                            <div class="px-2 py-4 px-md-4 py-md-3 bg-white shadow-sm rounded">
+                                <div class="d-flex mb-3 align-items-baseline border-bottom">
+                                    <h3 class="h5 fw-700 mb-0">
+                                        <span class="border-bottom border-primary border-width-2 pb-3 d-inline-block">Featured Products</span>
+                                    </h3>
+                                </div>
+                                <div class="aiz-carousel gutters-10 half-outside-arrow slick-initialized slick-slider" data-items="6" data-xl-items="5" data-lg-items="4" data-md-items="3" data-sm-items="2" data-xs-items="2" data-arrows="true"><button type="button" class="slick-prev slick-arrow" aria-disabled="false" style=""><i class="las la-angle-left"></i></button><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 2712px; transform: translate3d(-678px, 0px, 0px);"><div class="slick-slide" data-slick-index="0" aria-hidden="true" style="width: 226px;" tabindex="-1"><div><div class="carousel-box" style="width: 100%; display: inline-block;">
+                                        <div class="aiz-card-box border border-light rounded hov-shadow-md mt-1 mb-2 has-transition bg-white">
+                        <div class="position-relative">
+                                <a href="https://demo.activeitzone.com/ecommerce/product/apple-iphone-14-pro-128gb-512gb-deep-purple-unlocked" class="d-block" tabindex="-1">
+                            <img class="img-fit mx-auto h-140px h-md-210px lazyloaded" src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg" data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/IaqgwBAe6tTXCfDwHIRham8S5rFXLC77elMybtZC.webp" alt="Apple iPhone 14 Pro , 128GB, 512GB, Deep Purple- Unlocked" onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
+                        </a>
+                                <div class="absolute-top-right aiz-p-hov-icon">
+                            <a href="javascript:void(0)" onclick="addToWishList(161)" data-toggle="tooltip" data-title="Add to wishlist" data-placement="left" tabindex="-1">
+                                <i class="la la-heart-o"></i>
+                            </a>
+                            <a href="javascript:void(0)" onclick="addToCompare(161)" data-toggle="tooltip" data-title="Add to compare" data-placement="left" tabindex="-1">
+                                <i class="las la-sync"></i>
+                            </a>
+                            <a href="javascript:void(0)" onclick="showAddToCartModal(161)" data-toggle="tooltip" data-title="Add to cart" data-placement="left" tabindex="-1">
+                                <i class="las la-shopping-cart"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-md-3 p-2 text-left">
+                        <div class="fs-15">
+                                        <span class="fw-700 text-primary">$999.000</span>
+                        </div>
+                        <div class="rating rating-sm mt-1">
+                            <i class="las la-star active"></i><i class="las la-star active"></i><i class="las la-star active"></i><i class="las la-star active"></i><i class="las la-star active"></i>
+                        </div>
+                        <h3 class="fw-600 fs-13 text-truncate-2 lh-1-4 mb-0 h-35px">
+                            <a href="https://demo.activeitzone.com/ecommerce/product/apple-iphone-14-pro-128gb-512gb-deep-purple-unlocked" class="d-block text-reset" tabindex="-1">Apple iPhone 14 Pro , 128GB, 512GB, Deep Purple- Unlocked</a>
+                        </h3>
+                                    <div class="rounded px-2 mt-2 bg-soft-primary border-soft-primary border">
+                                Club Point:
+                                <span class="fw-700 float-right">0</span>
+                            </div>
+                            </div>
+                </div>
+                                    </div></div></div><div class="slick-slide" data-slick-index="1" aria-hidden="true" style="width: 226px;" tabindex="-1"><div><div class="carousel-box" style="width: 100%; display: inline-block;">
+                                        <div class="aiz-card-box border border-light rounded hov-shadow-md mt-1 mb-2 has-transition bg-white">
+                        <div class="position-relative">
+                                <a href="https://demo.activeitzone.com/ecommerce/product/corsair-k60-rgb-pro-mechanical-gaming-keyboard-cherry-mechanical-keyswitches-durable-aluminumframe-customizable-per-key-rgb-backlighting-black0" class="d-block" tabindex="-1">
+                            <img class="img-fit mx-auto h-140px h-md-210px lazyloaded" src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg" data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/4Z36GtOGZRtanoh6PrbPCWba0MuPUoAfIoEdgjr9.png" alt="Corsair K60 RGB Pro Mechanical Gaming Keyboard - CHERRY Mechanical Keyswitches - Durable AluminumFrame - Customizable Per-Key RGB Backlighting, Black" onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
+                        </a>
+                                <div class="absolute-top-right aiz-p-hov-icon">
+                            <a href="javascript:void(0)" onclick="addToWishList(160)" data-toggle="tooltip" data-title="Add to wishlist" data-placement="left" tabindex="-1">
+                                <i class="la la-heart-o"></i>
+                            </a>
+                            <a href="javascript:void(0)" onclick="addToCompare(160)" data-toggle="tooltip" data-title="Add to compare" data-placement="left" tabindex="-1">
+                                <i class="las la-sync"></i>
+                            </a>
+                            <a href="javascript:void(0)" onclick="showAddToCartModal(160)" data-toggle="tooltip" data-title="Add to cart" data-placement="left" tabindex="-1">
+                                <i class="las la-shopping-cart"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-md-3 p-2 text-left">
+                        <div class="fs-15">
+                                        <span class="fw-700 text-primary">$51.000</span>
+                        </div>
+                        <div class="rating rating-sm mt-1">
+                            <i class="las la-star"></i><i class="las la-star"></i><i class="las la-star"></i><i class="las la-star"></i><i class="las la-star"></i>
+                        </div>
+                        <h3 class="fw-600 fs-13 text-truncate-2 lh-1-4 mb-0 h-35px">
+                            <a href="https://demo.activeitzone.com/ecommerce/product/corsair-k60-rgb-pro-mechanical-gaming-keyboard-cherry-mechanical-keyswitches-durable-aluminumframe-customizable-per-key-rgb-backlighting-black0" class="d-block text-reset" tabindex="-1">Corsair K60 RGB Pro Mechanical Gaming Keyboard - CHERRY Mechanical Keyswitches - Durable AluminumFrame - Customizable Per-Key RGB Backlighting, Black</a>
+                        </h3>
+                                    <div class="rounded px-2 mt-2 bg-soft-primary border-soft-primary border">
+                                Club Point:
+                                <span class="fw-700 float-right">10</span>
+                            </div>
+                            </div>
+                </div>
+                                    </div></div></div><div class="slick-slide" data-slick-index="2" aria-hidden="true" style="width: 226px;" tabindex="-1"><div><div class="carousel-box" style="width: 100%; display: inline-block;">
+                                        <div class="aiz-card-box border border-light rounded hov-shadow-md mt-1 mb-2 has-transition bg-white">
+                        <div class="position-relative">
+                                <a href="https://demo.activeitzone.com/ecommerce/product/baby-girls-cotton-dress-cardigan-and-shoe-set" class="d-block" tabindex="-1">
+                            <img class="img-fit mx-auto h-140px h-md-210px ls-is-cached lazyloaded" src="https://demo.activeitzone.com/ecommerce/public/uploads/all/2RF080PPtVaUyETTD5MNxxxzfG2QwvAsAfsOExOD.png" data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/2RF080PPtVaUyETTD5MNxxxzfG2QwvAsAfsOExOD.png" alt="Gerber Unisex-Baby Onesies Bodysuit Multi Pack" onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
+                        </a>
+                                    <span class="absolute-bottom-left fs-11 text-white fw-600 px-2 lh-1-8" style="background-color: #455a64">
+                                Wholesale
+                            </span>
+                                <div class="absolute-top-right aiz-p-hov-icon">
+                            <a href="javascript:void(0)" onclick="addToWishList(131)" data-toggle="tooltip" data-title="Add to wishlist" data-placement="left" tabindex="-1">
+                                <i class="la la-heart-o"></i>
+                            </a>
+                            <a href="javascript:void(0)" onclick="addToCompare(131)" data-toggle="tooltip" data-title="Add to compare" data-placement="left" tabindex="-1">
+                                <i class="las la-sync"></i>
+                            </a>
+                            <a href="javascript:void(0)" onclick="showAddToCartModal(131)" data-toggle="tooltip" data-title="Add to cart" data-placement="left" tabindex="-1">
+                                <i class="las la-shopping-cart"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-md-3 p-2 text-left">
+                        <div class="fs-15">
+                                        <span class="fw-700 text-primary">$25.000</span>
+                        </div>
+                        <div class="rating rating-sm mt-1">
+                            <i class="las la-star active"></i><i class="las la-star active"></i><i class="las la-star active"></i><i class="las la-star active"></i><i class="las la-star active"></i>
+                        </div>
+                        <h3 class="fw-600 fs-13 text-truncate-2 lh-1-4 mb-0 h-35px">
+                            <a href="https://demo.activeitzone.com/ecommerce/product/baby-girls-cotton-dress-cardigan-and-shoe-set" class="d-block text-reset" tabindex="-1">Gerber Unisex-Baby Onesies Bodysuit Multi Pack</a>
+                        </h3>
+                                    <div class="rounded px-2 mt-2 bg-soft-primary border-soft-primary border">
+                                Club Point:
+                                <span class="fw-700 float-right">0</span>
+                            </div>
+                            </div>
+                </div>
+                                    </div></div></div><div class="slick-slide slick-current slick-active" data-slick-index="3" aria-hidden="false" style="width: 226px;"><div><div class="carousel-box" style="width: 100%; display: inline-block;">
+                                        <div class="aiz-card-box border border-light rounded hov-shadow-md mt-1 mb-2 has-transition bg-white">
+                        <div class="position-relative">
+                                <a href="https://demo.activeitzone.com/ecommerce/product/mens-one-and-only-textured-short-sleeve-button-up-qmn5g" class="d-block" tabindex="0">
+                            <img class="img-fit mx-auto h-140px h-md-210px ls-is-cached lazyloaded" src="https://demo.activeitzone.com/ecommerce/public/uploads/all/n0tG2QX1dPsDePj1b4pFbm4JQpfwx7NLWoCvHNgm.png" data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/n0tG2QX1dPsDePj1b4pFbm4JQpfwx7NLWoCvHNgm.png" alt="Gildan Men's Crew T-Shirts, Multipack" onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
+                        </a>
+                                    <span class="absolute-bottom-left fs-11 text-white fw-600 px-2 lh-1-8" style="background-color: #455a64">
+                                Wholesale
+                            </span>
+                                <div class="absolute-top-right aiz-p-hov-icon">
+                            <a href="javascript:void(0)" onclick="addToWishList(130)" data-toggle="tooltip" data-title="Add to wishlist" data-placement="left" tabindex="0">
+                                <i class="la la-heart-o"></i>
+                            </a>
+                            <a href="javascript:void(0)" onclick="addToCompare(130)" data-toggle="tooltip" data-title="Add to compare" data-placement="left" tabindex="0">
+                                <i class="las la-sync"></i>
+                            </a>
+                            <a href="javascript:void(0)" onclick="showAddToCartModal(130)" data-toggle="tooltip" data-title="Add to cart" data-placement="left" tabindex="0">
+                                <i class="las la-shopping-cart"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-md-3 p-2 text-left">
+                        <div class="fs-15">
+                                        <span class="fw-700 text-primary">$30.000</span>
+                        </div>
+                        <div class="rating rating-sm mt-1">
+                            <i class="las la-star active"></i><i class="las la-star active"></i><i class="las la-star active"></i><i class="las la-star"></i><i class="las la-star"></i>
+                        </div>
+                        <h3 class="fw-600 fs-13 text-truncate-2 lh-1-4 mb-0 h-35px">
+                            <a href="https://demo.activeitzone.com/ecommerce/product/mens-one-and-only-textured-short-sleeve-button-up-qmn5g" class="d-block text-reset" tabindex="0">Gildan Men's Crew T-Shirts, Multipack</a>
+                        </h3>
+                                    <div class="rounded px-2 mt-2 bg-soft-primary border-soft-primary border">
+                                Club Point:
+                                <span class="fw-700 float-right">0</span>
+                            </div>
+                            </div>
+                </div>
+                                    </div></div></div><div class="slick-slide slick-active" data-slick-index="4" aria-hidden="false" style="width: 226px;"><div><div class="carousel-box" style="width: 100%; display: inline-block;">
+                                        <div class="aiz-card-box border border-light rounded hov-shadow-md mt-1 mb-2 has-transition bg-white">
+                            <span class="badge-custom">OFF<span class="box ml-1 mr-0">&nbsp;40%</span></span>
+                        <div class="position-relative">
+                                <a href="https://demo.activeitzone.com/ecommerce/product/udalyn-rhinestone-bridesmaid-jewelry-sets-for-women-7i3tx" class="d-block" tabindex="0">
+                            <img class="img-fit mx-auto h-140px h-md-210px lazyloaded" src="https://demo.activeitzone.com/ecommerce/public/uploads/all/OAyteCbfJATwBhgXFIVJXZer1nMApjWSRxuvsuxo.png" data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/OAyteCbfJATwBhgXFIVJXZer1nMApjWSRxuvsuxo.png" alt="Gillette Sensor3 Comfort Disposable Razors for Men, 12 Count, Water-Activated Comfortgel Technology" onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
+                        </a>
+                                    <span class="absolute-bottom-left fs-11 text-white fw-600 px-2 lh-1-8" style="background-color: #455a64">
+                                Wholesale
+                            </span>
+                                <div class="absolute-top-right aiz-p-hov-icon">
+                            <a href="javascript:void(0)" onclick="addToWishList(128)" data-toggle="tooltip" data-title="Add to wishlist" data-placement="left" tabindex="0">
+                                <i class="la la-heart-o"></i>
+                            </a>
+                            <a href="javascript:void(0)" onclick="addToCompare(128)" data-toggle="tooltip" data-title="Add to compare" data-placement="left" tabindex="0">
+                                <i class="las la-sync"></i>
+                            </a>
+                            <a href="javascript:void(0)" onclick="showAddToCartModal(128)" data-toggle="tooltip" data-title="Add to cart" data-placement="left" tabindex="0">
+                                <i class="las la-shopping-cart"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-md-3 p-2 text-left">
+                        <div class="fs-15">
+                                            <del class="fw-600 opacity-50 mr-1">$25.000</del>
+                                        <span class="fw-700 text-primary">$15.000</span>
+                        </div>
+                        <div class="rating rating-sm mt-1">
+                            <i class="las la-star active"></i><i class="las la-star active"></i><i class="las la-star active"></i><i class="las la-star active"></i><i class="las la-star active"></i>
+                        </div>
+                        <h3 class="fw-600 fs-13 text-truncate-2 lh-1-4 mb-0 h-35px">
+                            <a href="https://demo.activeitzone.com/ecommerce/product/udalyn-rhinestone-bridesmaid-jewelry-sets-for-women-7i3tx" class="d-block text-reset" tabindex="0">Gillette Sensor3 Comfort Disposable Razors for Men, 12 Count, Water-Activated Comfortgel Technology</a>
+                        </h3>
+                                    <div class="rounded px-2 mt-2 bg-soft-primary border-soft-primary border">
+                                Club Point:
+                                <span class="fw-700 float-right">0</span>
+                            </div>
+                            </div>
+                </div>
+                                    </div></div></div><div class="slick-slide slick-active" data-slick-index="5" aria-hidden="false" style="width: 226px;"><div><div class="carousel-box" style="width: 100%; display: inline-block;">
+                                        <div class="aiz-card-box border border-light rounded hov-shadow-md mt-1 mb-2 has-transition bg-white">
+                        <div class="position-relative">
+                                <a href="https://demo.activeitzone.com/ecommerce/product/mens-machine-stainless-steel-quartz-chronograph-watch-2gns4" class="d-block" tabindex="0">
+                            <img class="img-fit mx-auto h-140px h-md-210px lazyloaded" src="https://demo.activeitzone.com/ecommerce/public/uploads/all/wTxJIHeuG9rlxXSwp1yTS8ptdSwYpOzMrhH5yvf1.jpg" data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/wTxJIHeuG9rlxXSwp1yTS8ptdSwYpOzMrhH5yvf1.jpg" alt="Men's Machine Stainless Steel Quartz Chronograph Watch" onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
+                        </a>
+                                <div class="absolute-top-right aiz-p-hov-icon">
+                            <a href="javascript:void(0)" onclick="addToWishList(127)" data-toggle="tooltip" data-title="Add to wishlist" data-placement="left" tabindex="0">
+                                <i class="la la-heart-o"></i>
+                            </a>
+                            <a href="javascript:void(0)" onclick="addToCompare(127)" data-toggle="tooltip" data-title="Add to compare" data-placement="left" tabindex="0">
+                                <i class="las la-sync"></i>
+                            </a>
+                            <a href="javascript:void(0)" onclick="showAddToCartModal(127)" data-toggle="tooltip" data-title="Add to cart" data-placement="left" tabindex="0">
+                                <i class="las la-shopping-cart"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-md-3 p-2 text-left">
+                        <div class="fs-15">
+                                        <span class="fw-700 text-primary">$190.000</span>
+                        </div>
+                        <div class="rating rating-sm mt-1">
+                            <i class="las la-star"></i><i class="las la-star"></i><i class="las la-star"></i><i class="las la-star"></i><i class="las la-star"></i>
+                        </div>
+                        <h3 class="fw-600 fs-13 text-truncate-2 lh-1-4 mb-0 h-35px">
+                            <a href="https://demo.activeitzone.com/ecommerce/product/mens-machine-stainless-steel-quartz-chronograph-watch-2gns4" class="d-block text-reset" tabindex="0">Men's Machine Stainless Steel Quartz Chronograph Watch</a>
+                        </h3>
+                                    <div class="rounded px-2 mt-2 bg-soft-primary border-soft-primary border">
+                                Club Point:
+                                <span class="fw-700 float-right">0</span>
+                            </div>
+                            </div>
+                </div>
+                                    </div></div></div><div class="slick-slide slick-active" data-slick-index="6" aria-hidden="false" style="width: 226px;"><div><div class="carousel-box" style="width: 100%; display: inline-block;">
+                                        <div class="aiz-card-box border border-light rounded hov-shadow-md mt-1 mb-2 has-transition bg-white">
+                            <span class="badge-custom">OFF<span class="box ml-1 mr-0">&nbsp;20%</span></span>
+                        <div class="position-relative">
+                                <a href="https://demo.activeitzone.com/ecommerce/product/airpods-max-hjeer" class="d-block" tabindex="0">
+                            <img class="img-fit mx-auto h-140px h-md-210px lazyloaded" src="https://demo.activeitzone.com/ecommerce/public/uploads/all/jHzVW1HMZwmQCDMg8QHFMbhjpmkkULoAvygciL2c.png" data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/jHzVW1HMZwmQCDMg8QHFMbhjpmkkULoAvygciL2c.png" alt="Apple iPhone 13 Pro Max (128 GB, Alpine Green)" onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
+                        </a>
+                                <div class="absolute-top-right aiz-p-hov-icon">
+                            <a href="javascript:void(0)" onclick="addToWishList(126)" data-toggle="tooltip" data-title="Add to wishlist" data-placement="left" tabindex="0">
+                                <i class="la la-heart-o"></i>
+                            </a>
+                            <a href="javascript:void(0)" onclick="addToCompare(126)" data-toggle="tooltip" data-title="Add to compare" data-placement="left" tabindex="0">
+                                <i class="las la-sync"></i>
+                            </a>
+                            <a href="javascript:void(0)" onclick="showAddToCartModal(126)" data-toggle="tooltip" data-title="Add to cart" data-placement="left" tabindex="0">
+                                <i class="las la-shopping-cart"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-md-3 p-2 text-left">
+                        <div class="fs-15">
+                                            <del class="fw-600 opacity-50 mr-1">$699.000</del>
+                                        <span class="fw-700 text-primary">$559.200</span>
+                        </div>
+                        <div class="rating rating-sm mt-1">
+                            <i class="las la-star"></i><i class="las la-star"></i><i class="las la-star"></i><i class="las la-star"></i><i class="las la-star"></i>
+                        </div>
+                        <h3 class="fw-600 fs-13 text-truncate-2 lh-1-4 mb-0 h-35px">
+                            <a href="https://demo.activeitzone.com/ecommerce/product/airpods-max-hjeer" class="d-block text-reset" tabindex="0">Apple iPhone 13 Pro Max (128 GB, Alpine Green)</a>
+                        </h3>
+                                    <div class="rounded px-2 mt-2 bg-soft-primary border-soft-primary border">
+                                Club Point:
+                                <span class="fw-700 float-right">2750</span>
+                            </div>
+                            </div>
+                </div>
+                                    </div></div></div><div class="slick-slide" data-slick-index="7" aria-hidden="true" style="width: 226px;" tabindex="-1"><div><div class="carousel-box" style="width: 100%; display: inline-block;">
+                                        <div class="aiz-card-box border border-light rounded hov-shadow-md mt-1 mb-2 has-transition bg-white">
+                            <span class="badge-custom">OFF<span class="box ml-1 mr-0">&nbsp;20%</span></span>
+                        <div class="position-relative">
+                                <a href="https://demo.activeitzone.com/ecommerce/product/animal-print-boys-track-suit-mg9py" class="d-block" tabindex="-1">
+                            <img class="img-fit mx-auto h-140px h-md-210px lazyloaded" src="https://demo.activeitzone.com/ecommerce/public/uploads/all/olt1GFKkEYLa6GIyXkx50HZQTOVOLOIw1ubDvsjb.png" data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/olt1GFKkEYLa6GIyXkx50HZQTOVOLOIw1ubDvsjb.png" alt="Animal Print Boys Track Suit" onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
+                        </a>
+                                <div class="absolute-top-right aiz-p-hov-icon">
+                            <a href="javascript:void(0)" onclick="addToWishList(124)" data-toggle="tooltip" data-title="Add to wishlist" data-placement="left" tabindex="-1">
+                                <i class="la la-heart-o"></i>
+                            </a>
+                            <a href="javascript:void(0)" onclick="addToCompare(124)" data-toggle="tooltip" data-title="Add to compare" data-placement="left" tabindex="-1">
+                                <i class="las la-sync"></i>
+                            </a>
+                            <a href="javascript:void(0)" onclick="showAddToCartModal(124)" data-toggle="tooltip" data-title="Add to cart" data-placement="left" tabindex="-1">
+                                <i class="las la-shopping-cart"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-md-3 p-2 text-left">
+                        <div class="fs-15">
+                                            <del class="fw-600 opacity-50 mr-1">$52.000</del>
+                                        <span class="fw-700 text-primary">$41.600</span>
+                        </div>
+                        <div class="rating rating-sm mt-1">
+                            <i class="las la-star"></i><i class="las la-star"></i><i class="las la-star"></i><i class="las la-star"></i><i class="las la-star"></i>
+                        </div>
+                        <h3 class="fw-600 fs-13 text-truncate-2 lh-1-4 mb-0 h-35px">
+                            <a href="https://demo.activeitzone.com/ecommerce/product/animal-print-boys-track-suit-mg9py" class="d-block text-reset" tabindex="-1">Animal Print Boys Track Suit</a>
+                        </h3>
+                                    <div class="rounded px-2 mt-2 bg-soft-primary border-soft-primary border">
+                                Club Point:
+                                <span class="fw-700 float-right">260</span>
+                            </div>
+                            </div>
+                </div>
+                                    </div></div></div><div class="slick-slide" data-slick-index="8" aria-hidden="true" style="width: 226px;" tabindex="-1"><div><div class="carousel-box" style="width: 100%; display: inline-block;">
+                                        <div class="aiz-card-box border border-light rounded hov-shadow-md mt-1 mb-2 has-transition bg-white">
+                            <span class="badge-custom">OFF<span class="box ml-1 mr-0">&nbsp;20%</span></span>
+                        <div class="position-relative">
+                                <a href="https://demo.activeitzone.com/ecommerce/product/men-slim-fit-checkered-spread-collar-casual-shirt-r78zi" class="d-block" tabindex="-1">
+                            <img class="img-fit mx-auto h-140px h-md-210px ls-is-cached lazyloaded" src="https://demo.activeitzone.com/ecommerce/public/uploads/all/fBfyYJCjd4gBekp6ymy83jxaEoqlD8OH8nQ2QYNH.png" data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/fBfyYJCjd4gBekp6ymy83jxaEoqlD8OH8nQ2QYNH.png" alt="Men Slim Fit Checkered Spread Collar Casual Shirt" onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
+                        </a>
+                                <div class="absolute-top-right aiz-p-hov-icon">
+                            <a href="javascript:void(0)" onclick="addToWishList(123)" data-toggle="tooltip" data-title="Add to wishlist" data-placement="left" tabindex="-1">
+                                <i class="la la-heart-o"></i>
+                            </a>
+                            <a href="javascript:void(0)" onclick="addToCompare(123)" data-toggle="tooltip" data-title="Add to compare" data-placement="left" tabindex="-1">
+                                <i class="las la-sync"></i>
+                            </a>
+                            <a href="javascript:void(0)" onclick="showAddToCartModal(123)" data-toggle="tooltip" data-title="Add to cart" data-placement="left" tabindex="-1">
+                                <i class="las la-shopping-cart"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-md-3 p-2 text-left">
+                        <div class="fs-15">
+                                            <del class="fw-600 opacity-50 mr-1">$50.000</del>
+                                        <span class="fw-700 text-primary">$40.000</span>
+                        </div>
+                        <div class="rating rating-sm mt-1">
+                            <i class="las la-star"></i><i class="las la-star"></i><i class="las la-star"></i><i class="las la-star"></i><i class="las la-star"></i>
+                        </div>
+                        <h3 class="fw-600 fs-13 text-truncate-2 lh-1-4 mb-0 h-35px">
+                            <a href="https://demo.activeitzone.com/ecommerce/product/men-slim-fit-checkered-spread-collar-casual-shirt-r78zi" class="d-block text-reset" tabindex="-1">Men Slim Fit Checkered Spread Collar Casual Shirt</a>
+                        </h3>
+                                    <div class="rounded px-2 mt-2 bg-soft-primary border-soft-primary border">
+                                Club Point:
+                                <span class="fw-700 float-right">250</span>
+                            </div>
+                            </div>
+                </div>
+                                    </div></div></div><div class="slick-slide" data-slick-index="9" aria-hidden="true" style="width: 226px;" tabindex="-1"><div><div class="carousel-box" style="width: 100%; display: inline-block;">
+                                        <div class="aiz-card-box border border-light rounded hov-shadow-md mt-1 mb-2 has-transition bg-white">
+                            <span class="badge-custom">OFF<span class="box ml-1 mr-0">&nbsp;20%</span></span>
+                        <div class="position-relative">
+                                <a href="https://demo.activeitzone.com/ecommerce/product/women-fit-and-flare-dress-rqrit" class="d-block" tabindex="-1">
+                            <img class="img-fit mx-auto h-140px h-md-210px lazyloaded" src="https://demo.activeitzone.com/ecommerce/public/uploads/all/ySXcvCWaNuO4J4ai3t8XhzXP7dINxkfnXOGyH1nY.png" data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/ySXcvCWaNuO4J4ai3t8XhzXP7dINxkfnXOGyH1nY.png" alt="Women Fit and Flare Dress" onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
+                        </a>
+                                <div class="absolute-top-right aiz-p-hov-icon">
+                            <a href="javascript:void(0)" onclick="addToWishList(122)" data-toggle="tooltip" data-title="Add to wishlist" data-placement="left" tabindex="-1">
+                                <i class="la la-heart-o"></i>
+                            </a>
+                            <a href="javascript:void(0)" onclick="addToCompare(122)" data-toggle="tooltip" data-title="Add to compare" data-placement="left" tabindex="-1">
+                                <i class="las la-sync"></i>
+                            </a>
+                            <a href="javascript:void(0)" onclick="showAddToCartModal(122)" data-toggle="tooltip" data-title="Add to cart" data-placement="left" tabindex="-1">
+                                <i class="las la-shopping-cart"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-md-3 p-2 text-left">
+                        <div class="fs-15">
+                                            <del class="fw-600 opacity-50 mr-1">$45.900</del>
+                                        <span class="fw-700 text-primary">$36.720</span>
+                        </div>
+                        <div class="rating rating-sm mt-1">
+                            <i class="las la-star"></i><i class="las la-star"></i><i class="las la-star"></i><i class="las la-star"></i><i class="las la-star"></i>
+                        </div>
+                        <h3 class="fw-600 fs-13 text-truncate-2 lh-1-4 mb-0 h-35px">
+                            <a href="https://demo.activeitzone.com/ecommerce/product/women-fit-and-flare-dress-rqrit" class="d-block text-reset" tabindex="-1">Women Fit and Flare Dress</a>
+                        </h3>
+                                    <div class="rounded px-2 mt-2 bg-soft-primary border-soft-primary border">
+                                Club Point:
+                                <span class="fw-700 float-right">225</span>
+                            </div>
+                            </div>
+                </div>
+                                    </div></div></div><div class="slick-slide" data-slick-index="10" aria-hidden="true" style="width: 226px;" tabindex="-1"><div><div class="carousel-box" style="width: 100%; display: inline-block;">
+                                        <div class="aiz-card-box border border-light rounded hov-shadow-md mt-1 mb-2 has-transition bg-white">
+                        <div class="position-relative">
+                                <a href="https://demo.activeitzone.com/ecommerce/product/stacy-adams-mens-suny-vested-is5qg" class="d-block" tabindex="-1">
+                            <img class="img-fit mx-auto h-140px h-md-210px ls-is-cached lazyloaded" src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg" data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/qWOIw3SZmXUJPIjixXHYuAcZfq2rV1tsD3Nz6JMe.png" alt="J.Ver Men's Casual Long Sleeve Stretch Dress Shirt Wrinkle-Free Regular Fit Button Down Shirts" onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
+                        </a>
+                                <div class="absolute-top-right aiz-p-hov-icon">
+                            <a href="javascript:void(0)" onclick="addToWishList(119)" data-toggle="tooltip" data-title="Add to wishlist" data-placement="left" tabindex="-1">
+                                <i class="la la-heart-o"></i>
+                            </a>
+                            <a href="javascript:void(0)" onclick="addToCompare(119)" data-toggle="tooltip" data-title="Add to compare" data-placement="left" tabindex="-1">
+                                <i class="las la-sync"></i>
+                            </a>
+                            <a href="javascript:void(0)" onclick="showAddToCartModal(119)" data-toggle="tooltip" data-title="Add to cart" data-placement="left" tabindex="-1">
+                                <i class="las la-shopping-cart"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-md-3 p-2 text-left">
+                        <div class="fs-15">
+                                        <span class="fw-700 text-primary">$60.000</span>
+                        </div>
+                        <div class="rating rating-sm mt-1">
+                            <i class="las la-star"></i><i class="las la-star"></i><i class="las la-star"></i><i class="las la-star"></i><i class="las la-star"></i>
+                        </div>
+                        <h3 class="fw-600 fs-13 text-truncate-2 lh-1-4 mb-0 h-35px">
+                            <a href="https://demo.activeitzone.com/ecommerce/product/stacy-adams-mens-suny-vested-is5qg" class="d-block text-reset" tabindex="-1">J.Ver Men's Casual Long Sleeve Stretch Dress Shirt Wrinkle-Free Regular Fit Button Down Shirts</a>
+                        </h3>
+                                    <div class="rounded px-2 mt-2 bg-soft-primary border-soft-primary border">
+                                Club Point:
+                                <span class="fw-700 float-right">300</span>
+                            </div>
+                            </div>
+                </div>
+                                    </div></div></div><div class="slick-slide" data-slick-index="11" aria-hidden="true" style="width: 226px;" tabindex="-1"><div><div class="carousel-box" style="width: 100%; display: inline-block;">
+                                        <div class="aiz-card-box border border-light rounded hov-shadow-md mt-1 mb-2 has-transition bg-white">
+                        <div class="position-relative">
+                                <a href="https://demo.activeitzone.com/ecommerce/product/calvin-klein-womens-sleeveless-round-neck-fit-and-flare-dress-ouymi" class="d-block" tabindex="-1">
+                            <img class="img-fit lazyload mx-auto h-140px h-md-210px" src="https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg" data-src="https://demo.activeitzone.com/ecommerce/public/uploads/all/uw8fWhQsK8TilyJ1cR4rQcTz2kffkOldHQupzmLz.png" alt="Agan Traders Women's Bohemian Patchwork Hippy Rib Hoodie Sweatshirts Jacket" onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
+                        </a>
+                                <div class="absolute-top-right aiz-p-hov-icon">
+                            <a href="javascript:void(0)" onclick="addToWishList(118)" data-toggle="tooltip" data-title="Add to wishlist" data-placement="left" tabindex="-1">
+                                <i class="la la-heart-o"></i>
+                            </a>
+                            <a href="javascript:void(0)" onclick="addToCompare(118)" data-toggle="tooltip" data-title="Add to compare" data-placement="left" tabindex="-1">
+                                <i class="las la-sync"></i>
+                            </a>
+                            <a href="javascript:void(0)" onclick="showAddToCartModal(118)" data-toggle="tooltip" data-title="Add to cart" data-placement="left" tabindex="-1">
+                                <i class="las la-shopping-cart"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-md-3 p-2 text-left">
+                        <div class="fs-15">
+                                        <span class="fw-700 text-primary">$60.000</span>
+                        </div>
+                        <div class="rating rating-sm mt-1">
+                            <i class="las la-star"></i><i class="las la-star"></i><i class="las la-star"></i><i class="las la-star"></i><i class="las la-star"></i>
+                        </div>
+                        <h3 class="fw-600 fs-13 text-truncate-2 lh-1-4 mb-0 h-35px">
+                            <a href="https://demo.activeitzone.com/ecommerce/product/calvin-klein-womens-sleeveless-round-neck-fit-and-flare-dress-ouymi" class="d-block text-reset" tabindex="-1">Agan Traders Women's Bohemian Patchwork Hippy Rib Hoodie Sweatshirts Jacket</a>
+                        </h3>
+                                    <div class="rounded px-2 mt-2 bg-soft-primary border-soft-primary border">
+                                Club Point:
+                                <span class="fw-700 float-right">300</span>
+                            </div>
+                            </div>
+                </div>
+                                    </div></div></div></div></div><button type="button" class="slick-next slick-arrow" style="" aria-disabled="false"><i class="las la-angle-right"></i></button></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
                 </div>
             </div>
         </section>
     </div>
     <section class="mb-4">
         <div class="container">
-            <div class="px-2 py-4 px-md-4 py-md-3 bg-white shadow-sm rounded">
+            <div class="px-2 py-4 px-md-4 py-md-3 bg-white shadow-sm rounded hs">
 
                 <div class="d-flex flex-wrap mb-3 align-items-baseline border-bottom">
                     <h3 class="h5 fw-700 mb-0">
-                        <span class="border-bottom border-primary border-width-2 pb-3 d-inline-block">All Products</span>
+                        <span class="border-bottom border-primary border-width-2 pb-3 d-inline-block">All
+                            Products</span>
                     </h3>
-                    <div class="aiz-count-down ml-auto ml-lg-3 align-items-center" data-date="2025/01/01 00:00:00"></div>
-                    <a href="/shop" class="ml-auto mr-0 btn btn-primary btn-sm shadow-md w-100 w-md-auto">View More</a>
+                    <div class="aiz-count-down ml-auto ml-lg-3 align-items-center" data-date="2025/01/01 00:00:00">
+                    </div>
+                    <a href="/shop" class="ml-auto mr-0 btn btn-primary btn-sm shadow-md w-100 w-md-auto">View
+                        More</a>
                 </div>
                 @foreach ($products as $product)
                     <div class="aiz-carousel gutters-10 half-outside-arrow" data-items="6" data-xl-items="5"
@@ -633,7 +1079,8 @@
                                 class="aiz-card-box border border-light rounded hov-shadow-md mt-1 mb-2 has-transition bg-white">
                                 <span class="badge-custom">OFF<span class="box ml-1 mr-0">&nbsp;20%</span></span>
                                 <div class="position-relative">
-                                    <a href="{{ route('product.details', ['slug' => $product->slug]) }}" class="d-block">
+                                    <a href="{{ route('product.details', ['slug' => $product->slug]) }}"
+                                        class="d-block">
                                         <img class="img-fit lazyload mx-auto h-140px h-md-210px"
                                             src="{{ $product->image_path }}" data-src="{{ $product->image_path }}"
                                             alt="{{ $product->name }}">
@@ -709,12 +1156,12 @@
                                             onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
                                     </a>
                                     <div class="absolute-top-right aiz-p-hov-icon">
-                                        <a href="javascript:void(0)" onclick="addToWishList(161)" data-toggle="tooltip"
-                                            data-title="Add to wishlist" data-placement="left">
+                                        <a href="javascript:void(0)" onclick="addToWishList(161)"
+                                            data-toggle="tooltip" data-title="Add to wishlist" data-placement="left">
                                             <i class="la la-heart-o"></i>
                                         </a>
-                                        <a href="javascript:void(0)" onclick="addToCompare(161)" data-toggle="tooltip"
-                                            data-title="Add to compare" data-placement="left">
+                                        <a href="javascript:void(0)" onclick="addToCompare(161)"
+                                            data-toggle="tooltip" data-title="Add to compare" data-placement="left">
                                             <i class="las la-sync"></i>
                                         </a>
                                         <a href="javascript:void(0)" onclick="showAddToCartModal(161)"
@@ -757,12 +1204,12 @@
                                             onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
                                     </a>
                                     <div class="absolute-top-right aiz-p-hov-icon">
-                                        <a href="javascript:void(0)" onclick="addToWishList(160)" data-toggle="tooltip"
-                                            data-title="Add to wishlist" data-placement="left">
+                                        <a href="javascript:void(0)" onclick="addToWishList(160)"
+                                            data-toggle="tooltip" data-title="Add to wishlist" data-placement="left">
                                             <i class="la la-heart-o"></i>
                                         </a>
-                                        <a href="javascript:void(0)" onclick="addToCompare(160)" data-toggle="tooltip"
-                                            data-title="Add to compare" data-placement="left">
+                                        <a href="javascript:void(0)" onclick="addToCompare(160)"
+                                            data-toggle="tooltip" data-title="Add to compare" data-placement="left">
                                             <i class="las la-sync"></i>
                                         </a>
                                         <a href="javascript:void(0)" onclick="showAddToCartModal(160)"
@@ -807,12 +1254,12 @@
                                             onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
                                     </a>
                                     <div class="absolute-top-right aiz-p-hov-icon">
-                                        <a href="javascript:void(0)" onclick="addToWishList(154)" data-toggle="tooltip"
-                                            data-title="Add to wishlist" data-placement="left">
+                                        <a href="javascript:void(0)" onclick="addToWishList(154)"
+                                            data-toggle="tooltip" data-title="Add to wishlist" data-placement="left">
                                             <i class="la la-heart-o"></i>
                                         </a>
-                                        <a href="javascript:void(0)" onclick="addToCompare(154)" data-toggle="tooltip"
-                                            data-title="Add to compare" data-placement="left">
+                                        <a href="javascript:void(0)" onclick="addToCompare(154)"
+                                            data-toggle="tooltip" data-title="Add to compare" data-placement="left">
                                             <i class="las la-sync"></i>
                                         </a>
                                         <a href="javascript:void(0)" onclick="showAddToCartModal(154)"
@@ -856,12 +1303,14 @@
                                             onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
                                     </a>
                                     <div class="absolute-top-right aiz-p-hov-icon">
-                                        <a href="javascript:void(0)" onclick="addToWishList(153)" data-toggle="tooltip"
-                                            data-title="Add to wishlist" data-placement="left">
+                                        <a href="javascript:void(0)" onclick="addToWishList(153)"
+                                            data-toggle="tooltip" data-title="Add to wishlist"
+                                            data-placement="left">
                                             <i class="la la-heart-o"></i>
                                         </a>
-                                        <a href="javascript:void(0)" onclick="addToCompare(153)" data-toggle="tooltip"
-                                            data-title="Add to compare" data-placement="left">
+                                        <a href="javascript:void(0)" onclick="addToCompare(153)"
+                                            data-toggle="tooltip" data-title="Add to compare"
+                                            data-placement="left">
                                             <i class="las la-sync"></i>
                                         </a>
                                         <a href="javascript:void(0)" onclick="showAddToCartModal(153)"
@@ -904,12 +1353,14 @@
                                             onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
                                     </a>
                                     <div class="absolute-top-right aiz-p-hov-icon">
-                                        <a href="javascript:void(0)" onclick="addToWishList(152)" data-toggle="tooltip"
-                                            data-title="Add to wishlist" data-placement="left">
+                                        <a href="javascript:void(0)" onclick="addToWishList(152)"
+                                            data-toggle="tooltip" data-title="Add to wishlist"
+                                            data-placement="left">
                                             <i class="la la-heart-o"></i>
                                         </a>
-                                        <a href="javascript:void(0)" onclick="addToCompare(152)" data-toggle="tooltip"
-                                            data-title="Add to compare" data-placement="left">
+                                        <a href="javascript:void(0)" onclick="addToCompare(152)"
+                                            data-toggle="tooltip" data-title="Add to compare"
+                                            data-placement="left">
                                             <i class="las la-sync"></i>
                                         </a>
                                         <a href="javascript:void(0)" onclick="showAddToCartModal(152)"
@@ -953,12 +1404,14 @@
                                             onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
                                     </a>
                                     <div class="absolute-top-right aiz-p-hov-icon">
-                                        <a href="javascript:void(0)" onclick="addToWishList(132)" data-toggle="tooltip"
-                                            data-title="Add to wishlist" data-placement="left">
+                                        <a href="javascript:void(0)" onclick="addToWishList(132)"
+                                            data-toggle="tooltip" data-title="Add to wishlist"
+                                            data-placement="left">
                                             <i class="la la-heart-o"></i>
                                         </a>
-                                        <a href="javascript:void(0)" onclick="addToCompare(132)" data-toggle="tooltip"
-                                            data-title="Add to compare" data-placement="left">
+                                        <a href="javascript:void(0)" onclick="addToCompare(132)"
+                                            data-toggle="tooltip" data-title="Add to compare"
+                                            data-placement="left">
                                             <i class="las la-sync"></i>
                                         </a>
                                         <a href="javascript:void(0)" onclick="showAddToCartModal(132)"
@@ -1006,12 +1459,14 @@
                                         Wholesale
                                     </span>
                                     <div class="absolute-top-right aiz-p-hov-icon">
-                                        <a href="javascript:void(0)" onclick="addToWishList(131)" data-toggle="tooltip"
-                                            data-title="Add to wishlist" data-placement="left">
+                                        <a href="javascript:void(0)" onclick="addToWishList(131)"
+                                            data-toggle="tooltip" data-title="Add to wishlist"
+                                            data-placement="left">
                                             <i class="la la-heart-o"></i>
                                         </a>
-                                        <a href="javascript:void(0)" onclick="addToCompare(131)" data-toggle="tooltip"
-                                            data-title="Add to compare" data-placement="left">
+                                        <a href="javascript:void(0)" onclick="addToCompare(131)"
+                                            data-toggle="tooltip" data-title="Add to compare"
+                                            data-placement="left">
                                             <i class="las la-sync"></i>
                                         </a>
                                         <a href="javascript:void(0)" onclick="showAddToCartModal(131)"
@@ -1058,12 +1513,14 @@
                                         Wholesale
                                     </span>
                                     <div class="absolute-top-right aiz-p-hov-icon">
-                                        <a href="javascript:void(0)" onclick="addToWishList(130)" data-toggle="tooltip"
-                                            data-title="Add to wishlist" data-placement="left">
+                                        <a href="javascript:void(0)" onclick="addToWishList(130)"
+                                            data-toggle="tooltip" data-title="Add to wishlist"
+                                            data-placement="left">
                                             <i class="la la-heart-o"></i>
                                         </a>
-                                        <a href="javascript:void(0)" onclick="addToCompare(130)" data-toggle="tooltip"
-                                            data-title="Add to compare" data-placement="left">
+                                        <a href="javascript:void(0)" onclick="addToCompare(130)"
+                                            data-toggle="tooltip" data-title="Add to compare"
+                                            data-placement="left">
                                             <i class="las la-sync"></i>
                                         </a>
                                         <a href="javascript:void(0)" onclick="showAddToCartModal(130)"
@@ -1107,12 +1564,14 @@
                                             onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/placeholder.jpg';">
                                     </a>
                                     <div class="absolute-top-right aiz-p-hov-icon">
-                                        <a href="javascript:void(0)" onclick="addToWishList(129)" data-toggle="tooltip"
-                                            data-title="Add to wishlist" data-placement="left">
+                                        <a href="javascript:void(0)" onclick="addToWishList(129)"
+                                            data-toggle="tooltip" data-title="Add to wishlist"
+                                            data-placement="left">
                                             <i class="la la-heart-o"></i>
                                         </a>
-                                        <a href="javascript:void(0)" onclick="addToCompare(129)" data-toggle="tooltip"
-                                            data-title="Add to compare" data-placement="left">
+                                        <a href="javascript:void(0)" onclick="addToCompare(129)"
+                                            data-toggle="tooltip" data-title="Add to compare"
+                                            data-placement="left">
                                             <i class="las la-sync"></i>
                                         </a>
                                         <a href="javascript:void(0)" onclick="showAddToCartModal(129)"
@@ -1162,11 +1621,13 @@
                                     </span>
                                     <div class="absolute-top-right aiz-p-hov-icon">
                                         <a href="javascript:void(0)" onclick="addToWishList(128)"
-                                            data-toggle="tooltip" data-title="Add to wishlist" data-placement="left">
+                                            data-toggle="tooltip" data-title="Add to wishlist"
+                                            data-placement="left">
                                             <i class="la la-heart-o"></i>
                                         </a>
-                                        <a href="javascript:void(0)" onclick="addToCompare(128)" data-toggle="tooltip"
-                                            data-title="Add to compare" data-placement="left">
+                                        <a href="javascript:void(0)" onclick="addToCompare(128)"
+                                            data-toggle="tooltip" data-title="Add to compare"
+                                            data-placement="left">
                                             <i class="las la-sync"></i>
                                         </a>
                                         <a href="javascript:void(0)" onclick="showAddToCartModal(128)"
@@ -1211,11 +1672,13 @@
                                     </a>
                                     <div class="absolute-top-right aiz-p-hov-icon">
                                         <a href="javascript:void(0)" onclick="addToWishList(127)"
-                                            data-toggle="tooltip" data-title="Add to wishlist" data-placement="left">
+                                            data-toggle="tooltip" data-title="Add to wishlist"
+                                            data-placement="left">
                                             <i class="la la-heart-o"></i>
                                         </a>
-                                        <a href="javascript:void(0)" onclick="addToCompare(127)" data-toggle="tooltip"
-                                            data-title="Add to compare" data-placement="left">
+                                        <a href="javascript:void(0)" onclick="addToCompare(127)"
+                                            data-toggle="tooltip" data-title="Add to compare"
+                                            data-placement="left">
                                             <i class="las la-sync"></i>
                                         </a>
                                         <a href="javascript:void(0)" onclick="showAddToCartModal(127)"
@@ -1260,11 +1723,13 @@
                                     </a>
                                     <div class="absolute-top-right aiz-p-hov-icon">
                                         <a href="javascript:void(0)" onclick="addToWishList(126)"
-                                            data-toggle="tooltip" data-title="Add to wishlist" data-placement="left">
+                                            data-toggle="tooltip" data-title="Add to wishlist"
+                                            data-placement="left">
                                             <i class="la la-heart-o"></i>
                                         </a>
-                                        <a href="javascript:void(0)" onclick="addToCompare(126)" data-toggle="tooltip"
-                                            data-title="Add to compare" data-placement="left">
+                                        <a href="javascript:void(0)" onclick="addToCompare(126)"
+                                            data-toggle="tooltip" data-title="Add to compare"
+                                            data-placement="left">
                                             <i class="las la-sync"></i>
                                         </a>
                                         <a href="javascript:void(0)" onclick="showAddToCartModal(126)"

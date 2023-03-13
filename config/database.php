@@ -78,6 +78,20 @@ return [
             'sslmode' => 'prefer',
         ],
 
+        'wordpress' => [ // for WordPress database (used by Corcel)
+            'driver'    => 'mysql',
+            'host'      => 'localhost',
+            'port' => '3306',
+            'database'  => 'wp_fcxkj',
+            'username'  => 'admin1',
+            'password'  => 'kW@f6bz6wLZ3rye!',
+            'charset'   => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix'    => 'wp_',
+            'strict'    => false,
+            'engine'    => null,
+        ],
+
         'sqlsrv' => [
             'driver' => 'sqlsrv',
             'url' => env('DATABASE_URL'),

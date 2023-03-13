@@ -51,6 +51,13 @@
 
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+
+
+
+
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="{{ asset('assets/css/vendors.css') }}">
@@ -210,7 +217,8 @@
                                             Koruna (Kč)</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item " href="javascript:void(0)" data-currency="DKK">Danish
+                                        <a class="dropdown-item " href="javascript:void(0)"
+                                            data-currency="DKK">Danish
                                             Krone (kr)</a>
                                     </li>
                                     <li>
@@ -416,10 +424,10 @@
                                     <i class="la la-shopping-cart la-2x opacity-80"></i>
                                     <span class="flex-grow-1 ml-1">
                                         <span class="badge badge-primary badge-inline badge-pill cart-count">
-                                            @if (Cart::count() > 0 )
-                                            {{ Cart::count() }}
+                                            @if (Cart::count() > 0)
+                                                {{ Cart::count() }}
                                             @else
-                                            0
+                                                0
                                             @endif
                                         </span>
                                         <span class="nav-box-text d-none d-xl-block opacity-70">Cart</span>
@@ -534,8 +542,7 @@
                                     business</span>
                             </div>
                             <div class="d-inline-block d-md-block mb-4">
-                                <form class="form-inline" method="POST"
-                                    action="/">
+                                <form class="form-inline" method="POST" action="/">
                                     <input type="hidden" name="_token"
                                         value="hMjpOODuJkEhxhySih23tpD5NvKdlpwqTqbHRiet">
                                     <div class="form-group mb-0">
@@ -631,32 +638,27 @@
                             </h4>
                             <ul class="list-unstyled">
                                 <li class="mb-2">
-                                    <a class="opacity-50 hov-opacity-100 text-reset"
-                                        href="/login">
+                                    <a class="opacity-50 hov-opacity-100 text-reset" href="/login">
                                         Login
                                     </a>
                                 </li>
                                 <li class="mb-2">
-                                    <a class="opacity-50 hov-opacity-100 text-reset"
-                                        href="/">
+                                    <a class="opacity-50 hov-opacity-100 text-reset" href="/">
                                         Order History
                                     </a>
                                 </li>
                                 <li class="mb-2">
-                                    <a class="opacity-50 hov-opacity-100 text-reset"
-                                        href="/wishlist">
+                                    <a class="opacity-50 hov-opacity-100 text-reset" href="/wishlist">
                                         My Wishlist
                                     </a>
                                 </li>
                                 <li class="mb-2">
-                                    <a class="opacity-50 hov-opacity-100 text-reset"
-                                        href="/">
+                                    <a class="opacity-50 hov-opacity-100 text-reset" href="/">
                                         Track Order
                                     </a>
                                 </li>
                                 <li class="mb-2">
-                                    <a class="opacity-50 hov-opacity-100 text-light"
-                                        href="/">Be an affiliate
+                                    <a class="opacity-50 hov-opacity-100 text-light" href="/">Be an affiliate
                                         partner</a>
                                 </li>
                             </ul>
@@ -665,8 +667,7 @@
                             <h4 class="fs-13 text-uppercase fw-600 border-bottom border-gray-900 pb-2 mb-4">
                                 Be a Seller
                             </h4>
-                            <a href="/"
-                                class="btn btn-primary btn-sm shadow-md">
+                            <a href="/" class="btn btn-primary btn-sm shadow-md">
                                 Apply Now
                             </a>
                         </div>
@@ -747,18 +748,17 @@
                         <span class="d-block mt-1 fs-10 fw-600 opacity-60 ">
                             Cart
                             (<span class="cart-count">
-                             @if (Cart::count() > 0)
-                                {{ Cart::count() }}
+                                @if (Cart::count() > 0)
+                                    {{ Cart::count() }}
                                 @else
-                                0
-                             @endif
+                                    0
+                                @endif
                             </span>)
                         </span>
                     </a>
                 </div>
                 <div class="col">
-                    <a href=""
-                        class="text-reset d-block text-center pb-2 pt-3">
+                    <a href="" class="text-reset d-block text-center pb-2 pt-3">
                         <span class="d-inline-block position-relative px-2">
                             <i class="las la-bell fs-20 opacity-60 "></i>
                         </span>
@@ -1221,38 +1221,18 @@
 
     <script>
         $(document).ready(function() {
-            $.post('https://demo.activeitzone.com/ecommerce/home/section/featured', {
-                _token: 'hMjpOODuJkEhxhySih23tpD5NvKdlpwqTqbHRiet'
-            }, function(data) {
-                $('#section_featured').html(data);
-                AIZ.plugins.slickCarousel();
-            });
-            $.post('https://demo.activeitzone.com/ecommerce/home/section/best_selling', {
-                _token: 'hMjpOODuJkEhxhySih23tpD5NvKdlpwqTqbHRiet'
-            }, function(data) {
-                $('#section_best_selling').html(data);
-                AIZ.plugins.slickCarousel();
-            });
-            $.post('https://demo.activeitzone.com/ecommerce/home/section/auction_products', {
-                _token: 'hMjpOODuJkEhxhySih23tpD5NvKdlpwqTqbHRiet'
-            }, function(data) {
-                $('#auction_products').html(data);
-                AIZ.plugins.slickCarousel();
-            });
-            $.post('https://demo.activeitzone.com/ecommerce/home/section/home_categories', {
-                _token: 'hMjpOODuJkEhxhySih23tpD5NvKdlpwqTqbHRiet'
-            }, function(data) {
-                $('#section_home_categories').html(data);
-                AIZ.plugins.slickCarousel();
-            });
-            $.post('https://demo.activeitzone.com/ecommerce/home/section/best_sellers', {
-                _token: 'hMjpOODuJkEhxhySih23tpD5NvKdlpwqTqbHRiet'
-            }, function(data) {
-                $('#section_best_sellers').html(data);
-                AIZ.plugins.slickCarousel();
-            });
+
+            $('.hs').slick({
+        setting-name: setting-value
+      });
+
+
         });
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>

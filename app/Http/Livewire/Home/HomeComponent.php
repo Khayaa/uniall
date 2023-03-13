@@ -6,13 +6,14 @@ use App\Models\Category;
 use App\Models\Product;
 use Livewire\Component;
 use Cart;
+use Corcel\Model\Post;
 
 class HomeComponent extends Component
 {
     public function render()
     {
         $categories =  Category::all()->take(3);
-        $products = Product::all()->take(7);
+        $products = Post::published()->get();
         $new_products  = Product::latest()->take(5);
         return view('livewire.home.home-component', ['products' => $products , 'new_products' => $new_products])->extends('layouts.base')->section('content');
     }
