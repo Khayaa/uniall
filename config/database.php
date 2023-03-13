@@ -83,7 +83,7 @@ return [
             'host'      => 'localhost',
             'port' => '3306',
             'database'  => 'wp_fcxkj',
-            'username'  => 'admin1',
+            'username'  => 'admin',
             'password'  => 'kW@f6bz6wLZ3rye!',
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
